@@ -1,0 +1,60 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import {once} from 'node:events';
+import {createPortfolioServer} from '../admin/server.mjs';
+import {maxCvBytes,validateCVFile} from '../admin/documents.js';
+
+test('CV uploads preserve PDF bytes and old files, and become public through a saved contact link',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'ridho-cv-test-'));
+  await fs.mkdir(path.join(root,'data'));
+  const original={email:'hello@example.com',linkedin:'',github:'',cv:'',cvFilename:'CV.pdf'};
+  const dataFile=path.join(root,'data/contact.json');await fs.writeFile(dataFile,JSON.stringify(original));
+  const server=createPortfolioServer({root});server.listen(0,'127.0.0.1');await once(server,'listening');
+  const origin=`http://127.0.0.1:${server.address().port}`;
+  t.after(async()=>{
+    await new Promise(resolve=>server.close(resolve));
+    const target=path.resolve(root);
+    if(path.dirname(target)!==path.resolve(os.tmpdir())||!path.basename(target).startsWith('ridho-cv-test-'))throw new Error('Unexpected test path.');
+    await fs.rm(target,{recursive:true,force:true});
+  });
+  const bytes=await fs.readFile(new URL('../assets/documents/socratix-v2-roadmap.pdf',import.meta.url));
+  const upload=(body=bytes,filename='Ridho Aditya CV.PDF',headers={})=>fetch(`${origin}/admin/api/documents/contact/cv?${new URLSearchParams({filename})}`,{method:'POST',headers:{'Content-Type':'application/pdf',Origin:origin,...headers},body});
+  const response=await upload();assert.equal(response.status,201);
+  const first=await response.json();assert.match(first.path,/^assets\/documents\/cv-[a-f0-9-]+\.pdf$/);
+  assert.equal(first.filename,'Ridho Aditya CV.PDF');assert.equal(first.bytes,bytes.length);
+  assert.deepEqual(await fs.readFile(path.join(root,first.path)),bytes);
+  assert.deepEqual(JSON.parse(await fs.readFile(dataFile,'utf8')),original,'Uploading only updates the draft, not contact JSON.');
+  const second=await(await upload()).json();assert.notEqual(second.path,first.path);
+  assert.deepEqual(await fs.readFile(path.join(root,first.path)),bytes,'Replacement preserves the old PDF for backups.');
+  const url=origin+'/admin/api/data/contact',loaded=await(await fetch(url)).json();
+  const edited={...original,cv:first.path,cvFilename:first.filename};
+  const saved=await fetch(url,{method:'PUT',headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify({data:edited,revision:loaded.revision})});
+  assert.equal(saved.status,200);
+  assert.deepEqual(await(await fetch(origin+'/data/contact.json')).json(),edited);
+  const publicFile=await fetch(origin+'/'+first.path);assert.equal(publicFile.status,200);assert.equal(publicFile.headers.get('Content-Type'),'application/pdf');
+  assert.deepEqual(Buffer.from(await publicFile.arrayBuffer()),bytes);
+  assert.equal((await upload(bytes,'../outside.pdf')).status,400);
+  assert.equal((await upload(bytes,'..\\outside.pdf')).status,400);
+  assert.equal((await upload(bytes,'CV.html')).status,400);
+  assert.equal((await upload(bytes,'CV.pdf',{'Content-Type':'text/html'})).status,415);
+  assert.equal((await upload(Buffer.from('<html>not PDF</html>'))).status,400);
+  assert.equal((await upload(bytes.subarray(0,50))).status,400);
+  assert.equal((await upload(Buffer.alloc(maxCvBytes+1))).status,413);
+  assert.equal((await upload(bytes,'CV.pdf',{Origin:'https://other.example'})).status,403);
+  assert.equal((await upload(bytes,'CV.pdf',{'Sec-Fetch-Site':'cross-site'})).status,403);
+  assert.equal((await fetch(origin+'/admin/api/documents/contact/cv')).status,405);
+  assert.equal((await fetch(origin+'/admin/api/documents/projects/cv',{method:'POST',body:bytes})).status,404);
+  assert.equal((await fs.readdir(path.join(root,'assets/documents'))).length,2,'Rejected uploads create no files.');
+});
+
+test('CV file picker accepts PDFs including missing MIME and rejects empty, oversized, and other file formats',()=>{
+  assert.doesNotThrow(()=>validateCVFile({name:'CV.PDF',type:'application/pdf',size:1024}));
+  assert.doesNotThrow(()=>validateCVFile({name:'CV.pdf',type:'',size:1024}));
+  assert.throws(()=>validateCVFile({name:'CV.pdf',type:'text/html',size:1024}),/PDF/);
+  assert.throws(()=>validateCVFile({name:'CV.docx',type:'application/pdf',size:1024}),/PDF/);
+  assert.throws(()=>validateCVFile({name:'CV.pdf',type:'application/pdf',size:0}),/kosong/);
+  assert.throws(()=>validateCVFile({name:'CV.pdf',type:'application/pdf',size:maxCvBytes+1}),/25 MB/);
+});

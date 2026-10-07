@@ -1,0 +1,345 @@
+[
+  {
+    "id": "pkm",
+    "title": "Software Engineer | PKM Research Grant",
+    "company": "Kementerian Pendidikan Tinggi, Sains, dan Teknologi",
+    "type": "Research program",
+    "start": "2025-05",
+    "end": "2025-12",
+    "location": "Indonesia",
+    "highlighted": true,
+    "logo": "assets/company_icon/kemendikti.webp",
+    "summary": "Secured a research grant to develop NEUROKIT, a multimodal neurotherapeutic prototype that improved student attention by 11.64% and earned a Bronze Medal at PIMNAS 38.",
+    "details": [
+      "Selected for research funding and advanced to the national final stage (PIMNAS 38), achieving 3rd place (Bronze Medal) after a highly competitive selection process involving 33,039 submitted proposals.",
+      "Developed a functional NEUROKIT prototype, demonstrating a 11.64% increase in student attention levels based on evaluation results.",
+      "Collaborated with a team of 4 members to design and implement 5 core features of NEUROKIT, including the NEUROKIT hardware device, AI-powered Text-to-Speech and motivation features, and a NEUROKIT mobile application, among other supporting features."
+    ],
+    "images": [
+      {
+        "src": "assets/experience/pkm-images-b525706c-6d68-42ed-aa85-f979cb690ac1.webp",
+        "alt": "Certificate",
+        "mode": "photo"
+      },
+      {
+        "src": "assets/experience/pkm-images-0cd82f6a-4292-46e1-a956-edbcc9a1a65c.webp",
+        "mode": "link",
+        "url": "https://www.youtube.com/watch?v=TP60I1iSNEA",
+        "label": "Prototype Showcase"
+      },
+      "assets/experience/pkm-images-cb066b9e-b31d-49cf-8a42-d0cad7a25178.webp"
+    ]
+  },
+  {
+    "id": "home-credit",
+    "title": "Data Science (Project-Based)",
+    "company": "Home Credit Indonesia x Rakamin Academy",
+    "type": "Project-based",
+    "start": "2025-10",
+    "end": "2025-11",
+    "location": "Indonesia",
+    "highlighted": false,
+    "logo": "assets/company_icon/homecredit.webp",
+    "summary": "Developed a credit-risk classifier with 91% accuracy using 307K+ applications and 7M+ records across six supporting tables.",
+    "details": [
+      "Completed a 4-week full-time virtual internship focused on Data Science, covering data preprocessing, data warehousing, Python programming, big data, and machine learning.",
+      "Achieved a final score of 82.91/100 and earned the distinction of Excellent Student.",
+      "Developed a credit default risk classification model as the final project, processing a dataset containing 307,000+ credit applications and 7+ million records across six supporting tables, achieving a classification accuracy of 0.91 (91%)."
+    ],
+    "images": [
+      "assets/experience/home-credit-images-e318a77b-e80a-45a3-a833-a843846de240.webp",
+      {
+        "src": "assets/experience/home-credit-images-a59c4c23-0ed9-4584-8c6c-8335d0c7c626.webp",
+        "mode": "link",
+        "url": "https://colab.research.google.com/drive/1TdXRZT6r__A8dP2oOBU191D1HymGi5Pw?usp=sharing",
+        "label": "Project Colab"
+      },
+      {
+        "src": "https://opengraph.githubassets.com/aa189fa63590a3b0c71160e667ac1bd1f1490e2f7cf4e631366465a2e9c6e91a/Idoo0/HCI---Final-Task",
+        "mode": "github",
+        "url": "https://github.com/Idoo0/HCI---Final-Task",
+        "label": "Project Repo"
+      }
+    ]
+  },
+  {
+    "id": "genera-z",
+    "title": "Software Engineer | Genera-Z Berbakti Program",
+    "company": "PT Bank Central Asia Tbk (BCA)",
+    "type": "Community program",
+    "start": "2025-07",
+    "end": "2025-08",
+    "location": "Derawan Island, East Kalimantan",
+    "highlighted": true,
+    "logo": "assets/company_icon/bca.webp",
+    "summary": "Delivered 20+ community activities and technology-led projects during a 28-day service program on Derawan Island, with a 2.64 SROI.",
+    "details": [
+      "Selected as a Genera-Z Berbakti program winner from 250 proposals, conducting a 28-day community service program in Derawan Island, East Kalimantan.",
+      "Executed 20+ core community service activities, successfully achieving a Social Return on Investment (SROI) score of 2.64.",
+      "Contributed to the development of two flagship community projects: an IoT-based automatic waste sorting system and a mobile application for stunting monitoring and stunting literacy, supporting technology-driven solutions for local community challenges."
+    ],
+    "images": [
+      {
+        "src": "assets/experience/genera-z-images-31d34604-78f1-49f8-813b-6e45d541d086.webp",
+        "alt": "Socialize the program"
+      },
+      {
+        "src": "assets/experience/genera-z-images-24199316-1b2a-4cf1-9b3a-f0e22cfc455e.webp",
+        "alt": "Our Team 🤩"
+      },
+      {
+        "src": "assets/experience/genera-z-images-e5e1f832-1ef1-4d28-95a8-fe1e8d1dec4f.webp",
+        "alt": "We cleaned the sea with local communities"
+      }
+    ]
+  },
+  {
+    "id": "bangkit",
+    "title": "Machine Learning Cohort Participant",
+    "company": "Bangkit Academy led by Google, GoTo, & Traveloka",
+    "type": "Training program",
+    "start": "2024-09",
+    "end": "2024-12",
+    "location": "Indonesia",
+    "highlighted": true,
+    "logo": "assets/company_icon/bangkit.webp",
+    "summary": "Completed around 900 hours of machine learning training and built Yuk Tanam, a plant-disease detection capstone with 77% model accuracy, in a team of 6+.",
+    "details": [
+      "Selected as 1 of 4,646 participants from 45,841 applicants to join the Bangkit Academy program.",
+      "Completed approximately 900 hours of intensive learning, covering modern Machine Learning curricula including Mathematics for Machine Learning, Applied Machine Learning, NLP, Computer Vision, Generative AI, and Generative Adversarial Networks (GANs).",
+      "Collaborated with a team of 6+ members to develop a plant disease detection model using Convolutional Neural Networks (CNN) with a ResNet backbone, achieving 77% classification accuracy, as part of the capstone project “Yuk Tanam.”"
+    ],
+    "images": [
+      {
+        "src": "assets/experience/bangkit-images-8e26c2f1-70c1-4697-9e5b-4184f5d09355.webp",
+        "alt": "Certificate"
+      },
+      {
+        "src": "assets/experience/bangkit-images-b10218ac-cc44-4d5c-87dd-352a782f3b1a.webp",
+        "mode": "link",
+        "url": "https://www.linkedin.com/pulse/yuktanam-bridging-nature-technology-greener-future-singgih-55elc/",
+        "label": "Project Overview",
+        "alt": "Our Project Capstone Overview"
+      },
+      {
+        "src": "assets/experience/bangkit-images-2cd0ce24-429e-49a1-b61e-3bada7c948bb.webp",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "id": "uniq",
+    "title": "AI/ML Engineer Intern",
+    "company": "PT. Aplikasi UNIQ Indonesia",
+    "type": "Internship",
+    "start": "2024-09",
+    "end": "2024-12",
+    "location": "Yogyakarta, Indonesia",
+    "highlighted": true,
+    "logo": "assets/company_icon/uniq.webp",
+    "summary": "Built a hybrid recommendation system using 200K+ transaction records and an agentic AI chatbot with Qdrant for semantic retrieval.",
+    "details": [
+      "Developed two core AI features, a hybrid Recommendation System and an Agentic AI Chatbot, and integrated Qdrant as a vector database to support semantic retrieval.",
+      "Built a hybrid recommendation system by combining Collaborative Filtering and Content-Based Filtering, successfully processing 200,000+ user transaction records while optimizing and reducing memory usage.",
+      "Designed and implemented an agentic AI chatbot using Chainlit with five specialized agents (RAG, SQL, chart visualization, FAQ, and custom agent) to enable extensible and intelligent interactions."
+    ],
+    "images": [
+      "assets/experience/uniq-images-c330c8fe-a2bb-4071-980d-4bb445f81010.webp",
+      "assets/experience/uniq-images-7435ed31-9e8b-4d69-b77f-1906066e8222.webp",
+      "assets/experience/uniq-images-41f4dac5-d82a-4e22-a10c-51a1207f3183.webp"
+    ]
+  },
+  {
+    "id": "genia",
+    "title": "Vice President",
+    "company": "UKM Penalaran Genia · FT UNSRAT",
+    "type": "Organization",
+    "start": "2024-08",
+    "end": "2024-12",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/genia.webp",
+    "summary": "",
+    "details": [],
+    "images": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "berbinar",
+    "title": "Back End Developer Intern",
+    "company": "PT Berbinar Insightful Indonesia",
+    "type": "Internship",
+    "start": "2024-04",
+    "end": "2024-10",
+    "location": "Surabaya, East Java",
+    "highlighted": true,
+    "logo": "assets/company_icon/berbinar.webp",
+    "summary": "Built 6+ Laravel backend features and five psychological-test systems, while improving legacy database models.",
+    "details": [
+      "Developed and delivered 6+ new backend features for Berbinar web applications, including intern registration systems, content management (CRUD), and other core functionalities, while refactoring legacy database models to improve system structure and maintainability.",
+      "Designed and implemented backend systems for 5 different psychological tests, each with distinct calculation logic and evaluation mechanisms.",
+      "Built backend services using PHP and Laravel following clean code principles, and collaborated with a team of 8+ developers to develop and maintain Berbinar’s web applications."
+    ],
+    "images": [
+      "assets/experience/berbinar-images-aa0ac1f3-4339-44c9-9e12-fe0b959cb7e5.webp",
+      "assets/experience/berbinar-images-0da9b5b0-c069-47de-9942-082cc755ec0b.webp",
+      "assets/experience/berbinar-images-5aa9aadd-0ca6-4fa8-9591-ed12d080147a.webp"
+    ]
+  },
+  {
+    "id": "unity-lead",
+    "title": "Machine Learning Engineer Lead",
+    "company": "UNSRAT IT Community",
+    "type": "Community project",
+    "start": "2024-07",
+    "end": "2024-09",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/unity.webp",
+    "summary": "Led a team of 12+ to build the UNITY chatbot, achieving 90% answer accuracy in manual QA, and a division recommendation system.",
+    "details": [
+      "Led and coordinated a team of 12+ members as the Lead Machine Learning Engineer, successfully delivering two major AI projects: a UNITY (UNSRAT IT Community) Chatbot and a Division Recommendation System.",
+      "Developed a chatbot using In-Context Learning techniques, achieving 90% answer accuracy based on manual Quality Assurance evaluation.",
+      "Built a division recommendation system using Support Vector Machine (SVM) algorithms, achieving an F1-score of 0.91."
+    ],
+    "images": [
+      "assets/experience/unity-lead-images-d021bb44-8c64-4bb4-ae49-9dce5bd582de.webp",
+      "assets/experience/unity-lead-images-e8041b3e-10dd-4832-bc7c-87ba8ac1edc7.webp",
+      "assets/experience/unity-lead-images-f36fefe5-d0bc-44da-ae54-516cc2470ca0.webp"
+    ]
+  },
+  {
+    "id": "unity-trainer",
+    "title": "Machine Learning Division Committee (Trainer)",
+    "company": "UNSRAT IT Community",
+    "type": "Training",
+    "start": "2024-01",
+    "end": "2024-09",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/unity.webp",
+    "summary": "Mentored 30+ cohort members through machine learning materials and practical sessions.",
+    "details": [
+      "Served as a Machine Learning Trainer for cohort participants, mentoring and guiding 30+ members throughout the program.",
+      "Developed and delivered 3+ machine learning materials and hands-on practical sessions, presented directly during cohort meetings.",
+      "Collaborated with 3 other committee members to design and structure the Machine Learning cohort curriculum."
+    ],
+    "images": [
+      {
+        "src": "assets/experience/unity-trainer-images-2cd5b19f-5703-46eb-8206-79c930f07af7.webp",
+        "mode": "link",
+        "url": "https://www.instagram.com/p/C21MAqSRxAG/",
+        "label": "Machine Learning Coordinator"
+      },
+      "assets/experience/unity-trainer-images-522f5c77-38cf-4e17-9b58-f2dc9c061137.webp",
+      ""
+    ]
+  },
+  {
+    "id": "unity-cohort",
+    "title": "AI & Mobile Development Cohort Participant",
+    "company": "UNSRAT IT Community",
+    "type": "Training program",
+    "start": "2023-04",
+    "end": "2023-12",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/unity.webp",
+    "summary": "Contributed to two mini-projects and a final kNN-VC voice-conversion project featuring three voices through the AI and mobile development cohort.",
+    "details": [
+      "Participated in a 6-month AI and Mobile Development cohort program with weekly technical sessions from April to September.",
+      "Collaborated with a team of 3+ members to develop 2 mini-projects as part of the cohort completion requirements.",
+      "Contributed as a Machine Learning Engineer in the final large-scale project by developing a voice conversion feature for deepfake application using kNN-VC model, enabling imitation of 3 different voices."
+    ],
+    "images": [
+      {
+        "src": "assets/experience/unity-cohort-images-71f1b5e6-f345-490a-b1ad-b0f5386d27d8.webp",
+        "mode": "link",
+        "url": "https://www.instagram.com/unity.unsrat/p/C06ryiWyXJD/?img_index=4",
+        "label": "Appreciation Post"
+      },
+      {
+        "src": "assets/experience/unity-cohort-images-c0d05187-9215-4b92-b1a8-c1e5751d3b48.webp",
+        "alt": "Mobile Development Team Member"
+      },
+      {
+        "src": "assets/experience/unity-cohort-images-6f29d851-e1d8-4d0c-8368-055aa0fb9626.webp",
+        "alt": "Artificial Inteligence Team Member"
+      }
+    ]
+  },
+  {
+    "id": "hme",
+    "title": "Back End Developer (Project-Based)",
+    "company": "Himpunan Mahasiswa Elektro · FT UNSRAT",
+    "type": "Project-based",
+    "start": "2024-02",
+    "end": "2024-04",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/hme.webp",
+    "summary": "Designed database ERDs and built Express.js and TypeScript CRUD APIs in collaboration with 10+ team members.",
+    "details": [
+      "Created Entity Relationship Diagrams (ERD) to design and structure the application database.",
+      "Developed backend APIs using Express.js and TypeScript, including core CRUD functionalities.",
+      "Collaborated with a team of 10+ members during the development of the web application"
+    ],
+    "images": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "kosan",
+    "title": "Back End Developer (Project-Based)",
+    "company": "KOSAN",
+    "type": "Project-based",
+    "start": "2024-01",
+    "end": "2024-04",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/kosan.webp",
+    "summary": "Designed database architecture and Express.js CRUD services, collaborating with 5+ team members on backend development.",
+    "details": [
+      "Designed and developed Entity Relationship Diagrams (ERD) as the foundation of the backend system architecture.",
+      "Implemented database designs using Express.js (Node.js) and built CRUD (Create, Read, Update, Delete) functionalities to support core application features.",
+      "Collaborated with a team of 5+ members during backend development and system integration."
+    ],
+    "images": [
+      "assets/experience/kosan-images-e76ecda5-8109-4e18-b1b7-009f796feb54.webp",
+      {
+        "src": "",
+        "mode": "photo",
+        "url": "",
+        "label": ""
+      },
+      ""
+    ]
+  },
+  {
+    "id": "teaching-assistant",
+    "title": "Teaching Assistant",
+    "company": "Sam Ratulangi University",
+    "type": "Teaching",
+    "start": "2023-07",
+    "end": "2023-12",
+    "location": "Manado, North Sulawesi",
+    "highlighted": false,
+    "logo": "assets/company_icon/unsrat.webp",
+    "summary": "Taught C++ fundamentals in Algorithms and Programming practicum sessions, supported around 30 students, and assessed student projects.",
+    "details": [
+      "Assisted and instructed approximately 30 students in Algorithms and Programming practicum sessions with a focus on C++ programming.",
+      "Explained core programming concepts including algorithmic logic, control structures, functions, arrays, and basic problem-solving techniques.",
+      "Designed and assessed around 5 mini-projects and 10 easy-level CP–style problems to reinforce practical implementation of programming concepts."
+    ],
+    "images": [
+      "assets/experience/teaching-assistant-images-b605fee1-63af-4717-929e-3dc8dbf41a04.webp",
+      "",
+      ""
+    ]
+  }
+]

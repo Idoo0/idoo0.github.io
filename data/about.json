@@ -1,0 +1,13 @@
+{
+  "intro": "Hi, I'm Ridho Aditya.",
+  "paragraphs": [
+    "I'm an AI & Machine Learning Engineer bridging research and real-world applications. I build production-ready AI systems, from recommendation engines and agentic chatbots to computer vision models.",
+    "A PIMNAS 38 Bronze Medalist, ICPC Asia Jakarta Regional Finalist, and Bangkit Academy graduate, I'm passionate about creating scalable, ethical AI that makes a meaningful impact."
+  ],
+  "highlights": ["PIMNAS 38 Bronze Medalist"],
+  "school": "Sam Ratulangi University",
+  "major": "Teknik Informatika / Computer Science",
+  "gpa": "3.99",
+  "gpaScale": "4.00",
+  "logo": "assets/images/unsrat-logo.png"
+}

@@ -1,0 +1,420 @@
+[
+  {
+    "id": "pimnas-38",
+    "title": "3rd (Bronze Medal) · PIMNAS 38",
+    "category": "National · Research Competition",
+    "issuer": "Ministry of Higher Education, Science and Technology of Indonesia (Kemendikti)",
+    "issuerLogo": "assets/company_icon/kemendikti.webp",
+    "year": "2025",
+    "recognition": "3rd Place · Bronze Medal · PKM-KC",
+    "highlighted": true,
+    "illustration": "medal",
+    "image": "assets/achievements/pimnas-38-image-e14321bf-4231-45d9-bd06-a65a243c7297.webp",
+    "imageAlt": "",
+    "summary": "A national research milestone with NEUROKIT, built to support student attention.",
+    "problemApproach": "Support student attention with NEUROKIT, an applied research prototype combining hardware, AI-assisted features, and a mobile application.",
+    "contributions": [
+      "Collaborated with a four-member team on five core features.",
+      "Developed AI-powered text-to-speech, motivation support, and a mobile application."
+    ],
+    "result": "Earned 3rd place (Bronze Medal) at PIMNAS 38 in the PKM-KC scheme. The NEUROKIT prototype improved student attention by 11.64% in the reported evaluation.",
+    "images": [],
+    "links": [
+      {
+        "label": "NEUROKIT presentation",
+        "url": "https://www.youtube.com/watch?v=TP60I1iSNEA"
+      }
+    ],
+    "date": "2025-11",
+    "source": {
+      "notionPage": "https://app.notion.com/p/3rd-Place-Bronze-Medal-National-Science-Student-Week-PIMNAS-2025-PKM-KC-Scheme-2c9add7ecaa38046bdd8dbcbc8e72b4b",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c9add7e-caa3-8046-bdd8-dbcbc8e72b4b",
+      "notionTitle": "3rd Place (Bronze Medal), National Science Student Week (PIMNAS) 2025 - PKM KC Scheme",
+      "dateText": "November 1, 2025",
+      "level": "National",
+      "attachmentRead": false,
+      "supportingExperience": "data/experience.json#pkm",
+      "note": "Award, scheme, issuer, and date are from Notion. NEUROKIT contributions and the reported attention improvement are from the existing CV-derived experience. The video is a project presentation, not an award certificate.",
+      "draftFields": [],
+      "dateCorrection": {
+        "from": "2025-10",
+        "to": "2025-11",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "icpc-jakarta",
+    "title": "Honorable Mention · ICPC Asia Jakarta 2025",
+    "category": "International · Competitive programming",
+    "issuer": "ICPC Foundation",
+    "issuerLogo": "assets/company_icon/icpc-jakarta-issuerLogo-8af3eccd-4c62-4366-a570-8c13365e5839.webp",
+    "year": "2025",
+    "recognition": "Honorable Mention · Regional Finalist",
+    "highlighted": true,
+    "illustration": "trophy",
+    "image": "assets/achievements/icpc-jakarta-image-2938aaa4-e5ff-451f-801d-470eec9cc042.webp",
+    "imageAlt": "",
+    "summary": "An Honorable Mention at the ICPC Asia Jakarta Regional Contest 2025, following national qualification.",
+    "problemApproach": "Apply algorithmic problem solving at the ICPC Asia Jakarta Regional stage, focusing on turning contest problems into correct, efficient solutions.",
+    "contributions": [
+      "Participated in the ICPC Asia Jakarta Regional Contest 2025."
+    ],
+    "result": "Received an Honorable Mention at the ICPC Asia Jakarta Regional Contest 2025, issued by the ICPC Foundation in November 2025.",
+    "images": [],
+    "links": [],
+    "date": "2025-11",
+    "source": {
+      "notionPage": "https://app.notion.com/p/Honorable-Mention-International-Collegiate-Programming-Contest-ICPC-Asia-Jakarta-Regional-Contest-2c8add7ecaa38035a529cdf017169e8d",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c8add7e-caa3-8035-a529-cdf017169e8d",
+      "notionTitle": "Honorable Mention, International Collegiate Programming Contest (ICPC) Asia Jakarta Regional Contest 2025",
+      "dateText": "November 1, 2025",
+      "level": "International",
+      "attachmentRead": false,
+      "note": "The recognition and year supersede the earlier generic finalist entry. Team name, ranking, solved-problem count, and exact individual tasks are not specified.",
+      "draftFields": [
+        "problemApproach"
+      ],
+      "dateCorrection": {
+        "from": "2025-10",
+        "to": "2025-11",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "bi-pidi-digdaya",
+    "title": "2nd Winner · BI PIDI Digdaya X Hackathon",
+    "category": "National · Hackathon",
+    "issuer": "Bank Indonesia",
+    "issuerLogo": "assets/company_icon/bi-pidi-digdaya-issuerLogo-c2ed7b94-2299-4f65-b139-9b9b712b301c.webp",
+    "year": "2026",
+    "recognition": "2nd Place",
+    "highlighted": true,
+    "illustration": "trophy",
+    "image": "assets/achievements/bi-pidi-digdaya-image-a1945bc3-f777-4a83-8673-39e12ebf49cb.webp",
+    "imageAlt": "",
+    "summary": "Second place in the national BI PIDI Digdaya X Hackathon, issued by Bank Indonesia in October 2026.",
+    "problemApproach": "Develop a competition entry for the BI PIDI Digdaya X Hackathon, focusing on a clear problem, a practical solution, and a concise presentation.",
+    "contributions": [
+      "Contributed to preparing and presenting the hackathon entry."
+    ],
+    "result": "Awarded 2nd place in the BI PIDI Digdaya X Hackathon by Bank Indonesia at the national level.",
+    "images": [],
+    "links": [],
+    "date": "2026-10",
+    "source": {
+      "notionPage": "https://app.notion.com/p/2nd-Winner-of-BI-PIDI-Digdaya-x-Hackahton-3eeadd7ecaa3803b89d5ef47d9dff38c",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "3eeadd7e-caa3-803b-89d5-ef47d9dff38c",
+      "notionTitle": "2nd Winner of BI PIDI Digdaya x Hackahton",
+      "dateText": "October 1, 2026",
+      "level": "National",
+      "attachmentRead": false,
+      "note": "The entry title, problem statement, technology, team, and personal responsibilities are not specified in Notion.",
+      "draftFields": [
+        "problemApproach",
+        "contributions"
+      ],
+      "dateCorrection": {
+        "from": "2026-09",
+        "to": "2026-10",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "solana-frontier",
+    "title": "9th Winner · 100xDevs Frontier Hackathon Track",
+    "category": "International · Hackathon",
+    "issuer": "100xDevs and Frontier",
+    "issuerLogo": "assets/company_icon/solana-frontier-issuerLogo-b1c91201-1e63-4f6c-82a4-b360b19b294b.webp",
+    "year": "2026",
+    "recognition": "9th Place",
+    "highlighted": false,
+    "illustration": "trophy",
+    "image": "assets/achievements/solana-frontier-image-6c3b65f2-f74a-42c3-9eb5-7c0533224e86.webp",
+    "imageAlt": "",
+    "summary": "Placed ninth in the international 100xDevs Solana Frontier Side Track in July 2026.",
+    "problemApproach": "Explore a Solana-based product direction and organize it into a competition entry for the Frontier Side Track.",
+    "contributions": [
+      "Contributed to the Solana Frontier Side Track competition entry."
+    ],
+    "result": "Recognized as the 9th-place winner in the 100xDevs Solana Frontier Side Track, issued by 100xDevs and Frontier.",
+    "images": [],
+    "links": [],
+    "date": "2026-07",
+    "source": {
+      "notionPage": "https://app.notion.com/p/9th-Winner-at-100xDevs-Solana-Frontier-Side-Track-3eeadd7ecaa3802b84a4ee33a88133d8",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "3eeadd7e-caa3-802b-84a4-ee33a88133d8",
+      "notionTitle": "9th Winner at 100xDevs Solana Frontier Side Track",
+      "dateText": "July 1, 2026",
+      "level": "International",
+      "attachmentRead": false,
+      "note": "The project, on-chain implementation, team, and exact personal tasks are not specified in Notion.",
+      "draftFields": [
+        "problemApproach",
+        "contributions"
+      ],
+      "dateCorrection": {
+        "from": "2026-06",
+        "to": "2026-07",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "asean-ai-hackathon",
+    "title": "11th Place · ASEAN AI Hackathon",
+    "category": "International · Hackathon",
+    "issuer": "ASEAN AI Foundation",
+    "issuerLogo": "assets/company_icon/asean-ai-hackathon-issuerLogo-cc0fc258-f35a-460a-be85-668a1b5d4f62.webp",
+    "year": "2026",
+    "recognition": "11th Ranked",
+    "highlighted": false,
+    "illustration": "certificate",
+    "image": "assets/achievements/asean-ai-hackathon-image-4b2ec865-8589-437a-a06c-ee7b4ed3eabf.webp",
+    "imageAlt": "",
+    "summary": "Ranked eleventh in the international ASEAN AI Hackathon in March 2026.",
+    "problemApproach": "Translate an AI-focused idea into a competition submission with a clear use case and an explanation of the proposed approach.",
+    "contributions": [
+      "Contributed to preparing the AI hackathon submission."
+    ],
+    "result": "Ranked 11th in the ASEAN AI Hackathon, with recognition issued by the ASEAN AI Foundation.",
+    "images": [],
+    "links": [],
+    "date": "2026-03",
+    "source": {
+      "notionPage": "https://app.notion.com/p/11th-Ranked-in-ASEAN-AI-Hackathon-3eeadd7ecaa380d89d07c068bd2ab353",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "3eeadd7e-caa3-80d8-9d07-c068bd2ab353",
+      "notionTitle": "11th Ranked in ASEAN AI Hackathon",
+      "dateText": "March 1, 2026",
+      "level": "International",
+      "attachmentRead": false,
+      "note": "The AI problem, model, team, evaluation metrics, and individual responsibilities are not specified in Notion.",
+      "draftFields": [
+        "problemApproach",
+        "contributions"
+      ],
+      "dateCorrection": {
+        "from": "2026-02",
+        "to": "2026-03",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "inc-2025",
+    "title": "Honor Award · INC 2025",
+    "category": "National · Competitive programming",
+    "issuer": "ICPC Foundation",
+    "issuerLogo": "assets/company_icon/inc-2025-issuerLogo-5343d466-5fca-4bf8-97eb-ada39d4d9a1d.webp",
+    "year": "2025",
+    "recognition": "Honor Award & Golden Ticket",
+    "highlighted": false,
+    "illustration": "trophy",
+    "image": "assets/achievements/inc-2025-image-97d6ce93-d2b1-4a03-91cf-25502db87331.webp",
+    "imageAlt": "",
+    "summary": "An Honor Award and Golden Ticket at Indonesia National Contest 2025 for ICPC regional qualification.",
+    "problemApproach": "Take part in the national ICPC qualification stage through algorithmic programming challenges and correct, efficient contest solutions.",
+    "contributions": [
+      "Participated in Indonesia National Contest 2025, the ICPC regional qualification stage."
+    ],
+    "result": "Received an Honor Award and Golden Ticket in Indonesia National Contest 2025, qualifying for the ICPC regional contest.",
+    "images": [],
+    "links": [],
+    "date": "2025-10",
+    "source": {
+      "notionPage": "https://app.notion.com/p/Honor-Award-and-Golden-Ticket-Winner-Indonesia-National-Contest-INC-2025-ICPC-RC-Qualification-2c9add7ecaa3809792c4cebd9d44a8d4",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c9add7e-caa3-8097-92c4-cebd9d44a8d4",
+      "notionTitle": "Honor Award and Golden Ticket Winner, Indonesia National Contest (INC) 2025 - ICPC RC Qualification",
+      "dateText": "October 1, 2025",
+      "level": "National",
+      "attachmentRead": false,
+      "note": "Qualification and recognition are explicit in the Notion title. Team details, score, and exact individual contest tasks are not specified.",
+      "draftFields": [
+        "problemApproach"
+      ],
+      "dateCorrection": {
+        "from": "2025-09",
+        "to": "2025-10",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "mtqmn-2025",
+    "title": "Finalist · MTQMN 2025",
+    "category": "National · Competition",
+    "issuer": "Ministry of Higher Education, Science and Technology of Indonesia (Kemendikti)",
+    "issuerLogo": "assets/company_icon/kemendikti.webp",
+    "year": "2025",
+    "recognition": "National Finalist · DAQ Category",
+    "highlighted": false,
+    "illustration": "certificate",
+    "image": "assets/achievements/mtqmn-2025-image-d461b766-0328-4304-a321-50ff7d66d4f7.webp",
+    "imageAlt": "",
+    "summary": "A national finalist in the Quran Application Design (DAQ) category of MTQMN 2025.",
+    "problemApproach": "Design an application direction around Quran-related learning or use, with attention to approachable navigation and a clear explanation of its purpose.",
+    "contributions": [
+      "Contributed to preparing an application-design entry for the DAQ category."
+    ],
+    "result": "Reached the national finalist stage of MTQMN 2025 in the Quran Application Design (DAQ) category.",
+    "images": [],
+    "links": [],
+    "date": "2025-09",
+    "source": {
+      "notionPage": "https://app.notion.com/p/Finalist-MTQMN-2025-Qur-an-Application-Design-DAQ-Category-2c9add7ecaa380aaba86c00994c5940e",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c9add7e-caa3-80aa-ba86-c00994c5940e",
+      "notionTitle": "Finalist, MTQMN 2025 - Qur’an Application Design (DAQ) Category",
+      "dateText": "September 1, 2025",
+      "level": "National",
+      "attachmentRead": false,
+      "note": "The application name, scope, team, and personal responsibilities are not specified. No connection to a particular portfolio project has been assumed.",
+      "draftFields": [
+        "problemApproach",
+        "contributions"
+      ],
+      "dateCorrection": {
+        "from": "2025-08",
+        "to": "2025-09",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "lidm-2025",
+    "title": "1st Place · LIDM 2025 (University)",
+    "category": "University · Competition",
+    "issuer": "Universitas Sam Ratulangi",
+    "issuerLogo": "assets/company_icon/unsrat.webp",
+    "year": "2025",
+    "recognition": "1st Place · University Level",
+    "highlighted": false,
+    "illustration": "trophy",
+    "image": "assets/achievements/lidm-2025-image-de3aee8a-ea46-48a0-8476-0cedae73610b.webp",
+    "imageAlt": "",
+    "summary": "First place at university level in the Digital Education Technology Innovation division of LIDM 2025.",
+    "problemApproach": "Prepare an education-technology innovation entry that connects a learning challenge with a proposed digital solution and an explanation of its benefits.",
+    "contributions": [
+      "Contributed to preparing an entry for the Digital Education Technology Innovation division."
+    ],
+    "result": "Awarded 1st place by Sam Ratulangi University in the LIDM 2025 Digital Education Technology Innovation division at university level.",
+    "images": [],
+    "links": [],
+    "date": "2025-09",
+    "source": {
+      "notionPage": "https://app.notion.com/p/1st-Place-Student-Digital-Innovation-Competition-LIDM-2025-Digital-Education-Technology-Innovat-2c9add7ecaa3803ab143c37a45848d76",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c9add7e-caa3-803a-b143-c37a45848d76",
+      "notionTitle": "1st Place, Student Digital Innovation Competition (LIDM) 2025 - Digital Education Technology Innovation Division",
+      "dateText": "September 1, 2025",
+      "level": "University",
+      "attachmentRead": false,
+      "note": "Notion explicitly lists University level and Universitas Sam Ratulangi as issuer. This is not represented as a national 1st-place award. The specific entry and personal responsibilities are not specified.",
+      "draftFields": [
+        "problemApproach",
+        "contributions"
+      ],
+      "dateCorrection": {
+        "from": "2025-08",
+        "to": "2025-09",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "pkm-funded",
+    "title": "PKM Funded Awardee",
+    "category": "National · Research Competition",
+    "issuer": "Ministry of Higher Education, Science and Technology of Indonesia (Kemendikti)",
+    "issuerLogo": "assets/company_icon/kemendikti.webp",
+    "year": "2025",
+    "recognition": "PKM Research Funding Awardee",
+    "highlighted": false,
+    "illustration": "certificate",
+    "image": "assets/achievements/pkm-funded-image-8bd0e887-5df7-4143-9179-5dd946773a19.webp",
+    "imageAlt": "",
+    "summary": "Research funding for NEUROKIT through the Program Kreativitas Mahasiswa selection.",
+    "problemApproach": "Develop NEUROKIT through PKM research funding, combining hardware, AI-assisted features, and a mobile application.",
+    "contributions": [
+      "Contributed to the NEUROKIT research prototype."
+    ],
+    "result": "Selected for funding through a competitive process involving 33,039 submitted proposals. The research later earned a Bronze Medal at PIMNAS 38.",
+    "images": [],
+    "links": [
+      {
+        "label": "NEUROKIT presentation",
+        "url": "https://www.youtube.com/watch?v=TP60I1iSNEA"
+      }
+    ],
+    "date": "2025-05",
+    "source": {
+      "notionPage": "https://app.notion.com/p/Student-Creativity-Program-PKM-Grantee-2c9add7ecaa38034ab6bfbeeb316f0ca",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c9add7e-caa3-8034-ab6b-fbeeb316f0ca",
+      "notionTitle": "Student Creativity Program (PKM) Grantee",
+      "dateText": "July 1, 2025",
+      "level": "National",
+      "attachmentRead": false,
+      "supportingExperience": "data/experience.json#pkm",
+      "note": "Funding recognition and award month come from Notion; implementation details and the 33,039-proposal selection context come from the existing CV-derived PKM experience. The award month differs from the project start month.",
+      "draftFields": [],
+      "dateCorrection": {
+        "from": "2025-06",
+        "to": "2025-07",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  },
+  {
+    "id": "genera-z-awardee",
+    "title": "The Winner · Genera-Z Berbakti Derawan Island",
+    "category": "National · Community Project Competition",
+    "issuer": "Bank Central Asia (BCA)",
+    "issuerLogo": "assets/company_icon/bca.webp",
+    "year": "2025",
+    "recognition": "Program Winner · Derawan Island",
+    "highlighted": false,
+    "illustration": "community",
+    "image": "assets/achievements/genera-z-awardee-image-24a9a723-a039-4578-8bb1-4349a81f9e98.webp",
+    "imageAlt": "",
+    "summary": "Selected for a community service program bringing technology-led initiatives to Derawan Island.",
+    "problemApproach": "Contribute to local activities and practical technology projects during a 28-day community service program on Derawan Island.",
+    "contributions": [
+      "Contributed to an IoT waste-sorting system and a mobile app for stunting monitoring and education."
+    ],
+    "result": "Selected as a program winner from 250 proposals. Delivered 20+ community activities with a 2.64 Social Return on Investment.",
+    "images": [],
+    "links": [
+      {
+        "label": "DerawanUp source code",
+        "url": "https://github.com/Gifriend/backti_cilik"
+      }
+    ],
+    "date": "2025-06",
+    "source": {
+      "notionPage": "https://app.notion.com/p/The-Winner-Genera-Z-Berbakti-Community-Service-Program-Derawan-Island-2c9add7ecaa380988885f3e1450ec8a8",
+      "notionDatabase": "https://app.notion.com/p/f42a4ccaa184459f9631ec5ec1be9e5f?v=a935e446294d461e952c8d6a6c054288",
+      "notionId": "2c9add7e-caa3-8098-8885-f3e1450ec8a8",
+      "notionTitle": "The Winner, Genera-Z Berbakti Community Service Program - Derawan Island",
+      "dateText": "May 1, 2025",
+      "level": "National",
+      "attachmentRead": false,
+      "supportingExperience": "data/experience.json#genera-z",
+      "note": "Recognition and award month come from Notion; 250 proposals, 28-day service, 20+ activities, SROI 2.64, and engineering contributions come from the existing CV-derived experience. Award selection in May precedes the July–August service period.",
+      "draftFields": [],
+      "dateCorrection": {
+        "from": "2025-04",
+        "to": "2025-05",
+        "reason": "Preserve the source calendar month without converting the local first day of the month to UTC."
+      }
+    }
+  }
+]

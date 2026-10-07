@@ -1,0 +1,1646 @@
+[
+  {
+    "id": "neurokit",
+    "title": "NEUROKIT",
+    "category": "AI learning toolkit",
+    "categories": [
+      "AI/ML",
+      "Mobile",
+      "IoT/Hardware"
+    ],
+    "status": "Prototype",
+    "illustration": "agent",
+    "summary": "A funded multimodal learning toolkit combining hardware, a mobile app, gamification, and generative AI to support student attention.",
+    "challengeApproach": "Help students sustain attention and strengthen memory retention during learning.\n\nCombine a multimodal neurotherapeutic hardware toolkit with a Flutter application, gamification, and generative AI features such as text-to-speech and motivation.",
+    "contributions": [
+      "Collaborated with a four-member team to design and implement the NEUROKIT research prototype.",
+      "Worked on the hardware and mobile application integration.",
+      "Contributed to AI-powered text-to-speech, motivation, and the toolkit evaluation."
+    ],
+    "result": "A funded PKM research prototype that earned a Bronze Medal at PIMNAS 38. The project evaluation reported an 11.64% improvement in student attention.\n\n- A multimodal NEUROKIT hardware device.\n- A companion mobile application.\n- Generative AI, text-to-speech, motivation, and gamified learning features.",
+    "selected": true,
+    "year": "2025",
+    "start": "2025-01",
+    "end": "2025-12",
+    "role": "Software Engineer",
+    "tech": [
+      "C++",
+      "Flutter",
+      "OpenRouter"
+    ],
+    "cover": "assets/projects/neurokit-cover-c6ccd851-8a65-4e60-a757-0e7dfc17e55e.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Project video",
+        "url": "https://www.youtube.com/watch?v=TP60I1iSNEA"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2d1add7e-caa3-8030-82d9-f6753289923a",
+      "notionTitle": "NEUROKIT: A Multimodal Neurotherapeutic-Based Dynamic Toolkit with a Generative AI-Integrated Gamification Approach to Improve Students' Attention Span and Memory Retention",
+      "attachmentRead": true,
+      "supportingExperience": "data/experience.json#pkm",
+      "note": "Scope confirmed by the project video description and Notion. Funding, Bronze Medal, team size, and attention improvement come from the existing CV-derived PKM experience.",
+      "draftFields": []
+    }
+  },
+  {
+    "id": "socratix",
+    "title": "Socratix",
+    "category": "AI mathematics learning platform",
+    "categories": [
+      "AI/ML",
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "agent",
+    "summary": "An AI mathematics-learning platform evolved from guided learning and dynamic visualizations into a multi-agent tutor with Socratic dialogue, validated calculations, and streamed interactive scenes.",
+    "challengeApproach": "Help students build mathematical understanding through step-by-step reasoning and visual exploration, instead of simply receiving a final answer.\n\nStarted with a generative AI platform for guided learning and dynamic visualizations, then evolved it into a multi-agent tutor. The later iteration separates routing, planning, Socratic dialogue, and visualization, with deterministic math validation and streamed responses connecting the tutoring workflow to the frontend.",
+    "contributions": [
+      "Worked on Socratix across two iterations, from guided learning and dynamic visualizations to a multi-agent mathematics tutor.",
+      "Contributed to AI integration, guided dialogue, mathematical validation, and structured visual scene planning.",
+      "Worked on the web experience connecting streamed tutoring responses with interactive mathematics visuals."
+    ],
+    "result": "A mathematics-learning proposal and demonstration for LIDM 2025, later developed into a modular web tutoring prototype with persistent learning state and interactive visual scenes.\n\n- Guided learning and Socratic prompts that support the student's next reasoning step.\n- Specialized agents for routing, planning, response generation, and visualization.\n- Deterministic math validation for supported tasks.\n- Interactive fraction bars, balance scales, number lines, and coordinate planes.\n- Streamed pipeline progress, tutoring responses, and scene plans.",
+    "selected": true,
+    "year": "2025–2026",
+    "start": "2025-08",
+    "end": "2026-06",
+    "role": "Software Engineer / Machine Learning Engineer",
+    "tech": [
+      "Next.js",
+      "NestJS",
+      "Groq",
+      "TypeScript",
+      "Math.js",
+      "Zod",
+      "Prisma",
+      "PostgreSQL",
+      "Redis",
+      "Gemini",
+      "Qwen"
+    ],
+    "cover": "assets/projects/socratix-cover-b87848ae-92c7-4a1b-a46e-0d049dffc6b2.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/reregin/socratix"
+      },
+      {
+        "label": "Technical roadmap",
+        "url": "assets/documents/socratix-v2-roadmap.pdf"
+      },
+      {
+        "label": "Project video",
+        "url": "https://www.youtube.com/watch?v=vlRfPOtOwDY"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c8add7e-caa3-80b2-b462-c56a0ec84290",
+      "notionTitle": "Scoratix: Generative AI-Based Interactive Mathematics System with Guided Learning through Dynamic Visualization",
+      "attachmentRead": true,
+      "note": "Combined the first Socratix platform and its later multi-agent tutor into one project. The period uses the start of the first iteration and the end of the second. Original references and notes are retained for both iterations; proposed evaluation goals are not presented as measured outcomes.",
+      "draftFields": [
+        "status",
+        "challengeApproach",
+        "contributions",
+        "role"
+      ],
+      "repository": "https://github.com/reregin/socratix",
+      "revision": "0cb9e5ffafd7048c66069114ed70af22b44949ab",
+      "references": [
+        "docs/PRD.md",
+        "docs/PIPELINE.md",
+        "docs/STREAM_CONTRACT.md",
+        "apps/backend/src/chat/chat.controller.ts",
+        "apps/backend/src/agents/router/router.service.ts",
+        "apps/backend/src/agents/planner/planner.service.ts",
+        "apps/backend/src/agents/visualizer/visualizer.service.ts",
+        "apps/backend/src/services/validator/math-validator.service.ts",
+        "AI For Education_Universitas Sam Ratulangi_TouLearn_Roadmap.pdf"
+      ],
+      "iterations": [
+        {
+          "id": "socratix",
+          "title": "Socratix",
+          "start": "2025-08",
+          "end": "2025-10",
+          "source": {
+            "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+            "notionId": "2c8add7e-caa3-80b2-b462-c56a0ec84290",
+            "notionTitle": "Scoratix: Generative AI-Based Interactive Mathematics System with Guided Learning through Dynamic Visualization",
+            "attachmentRead": true,
+            "note": "The Notion row spells the title Scoratix, but the linked team video confirms Socratix. Scope is verified from the video description; implementation details, individual contributions, and measured outcomes remain drafts.",
+            "draftFields": [
+              "status",
+              "challengeApproach",
+              "contributions"
+            ]
+          }
+        },
+        {
+          "id": "socratix-v2",
+          "title": "Socratix v2",
+          "start": "2026-05",
+          "end": "2026-06",
+          "source": {
+            "repository": "https://github.com/reregin/socratix",
+            "revision": "0cb9e5ffafd7048c66069114ed70af22b44949ab",
+            "attachmentRead": true,
+            "references": [
+              "docs/PRD.md",
+              "docs/PIPELINE.md",
+              "docs/STREAM_CONTRACT.md",
+              "apps/backend/src/chat/chat.controller.ts",
+              "apps/backend/src/agents/router/router.service.ts",
+              "apps/backend/src/agents/planner/planner.service.ts",
+              "apps/backend/src/agents/visualizer/visualizer.service.ts",
+              "apps/backend/src/services/validator/math-validator.service.ts",
+              "AI For Education_Universitas Sam Ratulangi_TouLearn_Roadmap.pdf"
+            ],
+            "note": "Dates supplied by Ridho. Multi-agent orchestration, deterministic validation, and streamed scene output are confirmed in the code and roadmap. Proposed roadmap milestones and evaluation goals are not claimed as measured outcomes. Reuses the existing Socratix cover. Individual role and contributions await confirmation.",
+            "draftFields": [
+              "role",
+              "contributions"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "learnify",
+    "title": "LEARNIFY",
+    "category": "Gamified learning app design",
+    "categories": [
+      "Mobile"
+    ],
+    "status": "Concept",
+    "illustration": "backend",
+    "summary": "A learning-app concept that combines short educational videos with gamification to make student learning materials easier to revisit.",
+    "challengeApproach": "Make learning materials easier to approach in short, focused sessions.\n\nDesign a short-video learning experience with a gamification layer and clear navigation, starting from a Figma-based product concept.",
+    "contributions": [
+      "Explored the short-video learning concept and its student use cases.",
+      "Drafted the learning flow and gamification experience in Figma.",
+      "Helped organize the product direction and design discussion."
+    ],
+    "result": "A student learning-app concept centered on short educational videos and gamification, with a Figma-based design direction.\n\n- Short-video learning materials.\n- A proposed gamification layer.\n- A Figma-based product design direction.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-03",
+    "end": "2024-03",
+    "role": "Software Engineer / Research",
+    "tech": [
+      "Figma",
+      "Leadership"
+    ],
+    "cover": "assets/projects/learnify-cover-941ac1a7-f049-4f15-bba0-03002fed90fb.webp",
+    "images": [],
+    "links": [],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80a3-9e5b-f9fe0c1e1d58",
+      "notionTitle": "LEARNIFY:  Short-video App with Gamification for Student Learning Material",
+      "attachmentRead": false,
+      "note": "No attachment or description is provided in Notion. Copy is drafted only from the title, Figma/Leadership metadata, and the Software Engineer / Research role.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "arusbiru",
+    "title": "ArusBiru",
+    "category": "Browser-based educational game",
+    "categories": [
+      "Web",
+      "Game"
+    ],
+    "status": "Production",
+    "illustration": "vision",
+    "summary": "A playable browser game where a turtle collects plastic waste, introducing ocean-conservation ideas from SDG 14.",
+    "challengeApproach": "Introduce marine waste and ocean conservation through a simple interactive experience.\n\nBuild a browser game in which players guide a turtle, collect plastic, avoid colliding with fish, and follow their score and health.",
+    "contributions": [
+      "Worked on the HTML and JavaScript browser-game implementation.",
+      "Prepared the turtle movement, collection, and obstacle interaction flow.",
+      "Integrated the game interface and published the playable itch.io version."
+    ],
+    "result": "A browser-playable game published on itch.io, with a visible instruction screen and game interface.\n\n- Keyboard and touch controls.\n- Plastic collection, scoring, and levels.\n- Health tracking and fish-collision avoidance.",
+    "selected": false,
+    "year": "2025",
+    "start": "2025-11",
+    "end": "2025-11",
+    "role": "Software Engineer",
+    "tech": [
+      "HTML",
+      "JavaScript"
+    ],
+    "cover": "assets/projects/arusbiru-cover-9d97ff4f-7406-405e-be32-2210d37ff4a8.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Play game",
+        "url": "https://idoo0.itch.io/arus-biru"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80fe-b33d-d318958b9bf8",
+      "notionTitle": "ArusBiru: Game for Introduction of SDG Bellow the Water",
+      "attachmentRead": true,
+      "note": "The published game was opened and its start screen, controls, score, level, and health UI were inspected. Individual task wording is a draft.",
+      "draftFields": [
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "hudaverse",
+    "title": "Hudaverse",
+    "category": "Software as a Service",
+    "categories": [
+      "Web",
+      "AI/ML"
+    ],
+    "status": "Prototype",
+    "illustration": "agent",
+    "summary": "A Quranic learning web prototype combining daily activities, progress tracking, gamification, and an AI-assisted learning direction.",
+    "challengeApproach": "Encourage consistent Quranic learning through small, approachable daily activities.\n\nCombine a daily verse, reflection, dhikr, and prayer activities with progress feedback, then explore Gemini-assisted learning within the product.",
+    "contributions": [
+      "Worked on the web interface and daily learning-activity flow.",
+      "Connected progress-oriented screens and Quranic content navigation.",
+      "Explored the Gemini-assisted learning direction described in the project scope."
+    ],
+    "result": "A publicly accessible web prototype showing Quranic learning activities and progress-oriented screens.\n\n- Verse of the day and daily reflection.\n- Dhikr and prayer activity cards.\n- Progress, Quran, and learning-companion navigation.",
+    "selected": true,
+    "year": "2025",
+    "start": "2025-06",
+    "end": "2025-09",
+    "role": "Software Engineer / Machine Learning Engineer",
+    "tech": [
+      "HTML",
+      "JavaScript",
+      "Tailwind CSS",
+      "Gemini"
+    ],
+    "cover": "assets/projects/hudaverse-cover-74c49c76-f36f-455d-bae1-c596dc38c5e5.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Live demo",
+        "url": "https://idoo0.github.io/hudaverse/"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c8add7e-caa3-8099-90fc-f1d4ee6247d5",
+      "notionTitle": "Hudaverse: An Gamified Quranic App with Artificial Intelligence",
+      "attachmentRead": true,
+      "note": "Daily activity cards and navigation were inspected in the live website. Gemini comes from Notion metadata; backend AI behavior, persistence, and individual contributions were not verified.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "genia",
+    "title": "GENIA Information System",
+    "category": "Student-community web platform",
+    "categories": [
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "backend",
+    "summary": "A Laravel website for GENIA with public club information, blogs, news, competitions, and a content-management admin panel.",
+    "challengeApproach": "Bring student-club information and content publishing into one maintainable website.\n\nUse Laravel and Blade for public pages, separate administration layouts, and authenticated workflows for managing blogs, news, and competitions.",
+    "contributions": [
+      "Contributed to the GENIA website as part of the three-member development team.",
+      "Worked on public information and content-oriented web pages.",
+      "Contributed to the Laravel content-management and admin workflows."
+    ],
+    "result": "A GENIA website codebase with public content sections and an authenticated administration area.\n\n- Club profile, about, and awards pages.\n- Blog, news, and competition pages.\n- Admin workflows for creating, editing, and deleting content.",
+    "selected": false,
+    "year": "2025",
+    "start": "2025-05",
+    "end": "2025-06",
+    "role": "Software Engineer / Full Stack Developer",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "Tailwind CSS",
+      "JavaScript",
+      "MySQL",
+      "Blade",
+      "Vite"
+    ],
+    "cover": "assets/projects/genia-cover-001242a6-f083-4356-9e67-e980c97d2b46.webp",
+    "images": [
+      "assets/projects/genia-images-859c13b5-7026-4b6e-8692-0c61c7429e29.webp",
+      "assets/projects/genia-images-8f2844d9-f373-4989-a59c-120d31ac9ec0.webp"
+    ],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/genia-information-system"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80c6-a18a-ea0cb86859ee",
+      "notionTitle": "GENIA Scientific Reasoning Student Club Landing Page",
+      "attachmentRead": true,
+      "note": "Features, team attribution, and technology choices verified in README and routes/web.php. Exact individual task ownership and public deployment status are drafts.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "cora",
+    "title": "CORA",
+    "category": "Web3 aptitude battle arena",
+    "categories": [
+      "Game",
+      "Web3/Crypto",
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "backend",
+    "summary": "A Solana-based PvP arena where players compete in timed aptitude battles with scientist characters, real-time matchmaking, and on-chain escrow.",
+    "challengeApproach": "Make aptitude practice more engaging while coordinating real-time battles and transparent match settlement.\n\nConnect a Next.js web arena to a Bun/Hono WebSocket backend and Solana escrow programs. Public matchmaking and private Blink challenges share the battle engine; optional MagicBlock integration mirrors battle state through delegated execution.",
+    "contributions": [
+      "Worked on the web arena flow connecting wallet entry, matchmaking, and battle sessions.",
+      "Contributed to the real-time battle and shared game-logic integration.",
+      "Worked on the connection between match outcomes and the Solana escrow flow."
+    ],
+    "result": "A Devnet arena prototype with a public demo and a documented application, battle, and escrow architecture. MagicBlock battle-state execution is available when configured.\n\n- Public queue matchmaking and private Solana Actions / Blink challenges.\n- Timed math, logic, and sequence questions with scientist abilities and best-of-three rounds.\n- WebSocket battle rooms and shared game logic.\n- On-chain deposit, settlement, refund, and reclaim flows.",
+    "selected": true,
+    "year": "2026",
+    "start": "2026-05",
+    "end": "2026-07",
+    "role": "",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Solana",
+      "React",
+      "Tailwind CSS",
+      "Bun",
+      "Hono",
+      "WebSockets",
+      "Rust",
+      "Anchor",
+      "MagicBlock",
+      "Supabase"
+    ],
+    "cover": "assets/projects/cora-cover-c283eead-8a2c-4c92-8eb0-1dc9d6cb75f0.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Live demo",
+        "url": "https://cora-gamefi.vercel.app/"
+      },
+      {
+        "label": "Source code",
+        "url": "https://github.com/ahmdtrdi/Cora"
+      }
+    ],
+    "source": {
+      "repository": "https://github.com/ahmdtrdi/Cora",
+      "revision": "8cb2d07f3bba13acc5fe2650565dcb62baec3bfe",
+      "attachmentRead": true,
+      "references": [
+        "README.md",
+        "docs/MASTER.md",
+        "apps/web/package.json",
+        "apps/api/package.json",
+        "https://cora-gamefi.vercel.app/"
+      ],
+      "note": "Dates supplied by Ridho. Devnet status and product flows are documented in the repository; the public landing page was read without connecting a wallet or testing transactions. Cover reuses the repository header, converted to WebP. Individual role and contributions await confirmation.",
+      "draftFields": [
+        "role",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "yudha",
+    "title": "YUDHA",
+    "category": "Gamified test preparation and AI interview app",
+    "categories": [
+      "Game",
+      "Mobile",
+      "AI/ML"
+    ],
+    "status": "Beta",
+    "illustration": "agent",
+    "summary": "A Flutter learning arena combining aptitude-test practice, real-time quiz duels, progress tracking, and agentic AI interview preparation for CPNS and BUMN applicants.",
+    "challengeApproach": "Bring test practice, learning feedback, and interview preparation into one experience that encourages consistent study.\n\nUse Flutter for Android and web/PWA, with separate NestJS services for learning and real-time matches. Combine recommended solo practice, quiz battles, and an AI interview pipeline that handles role-specific prompts, answer evaluation, transcription, and speech synthesis.",
+    "contributions": [
+      "Worked on the integration of learning, practice, and game flows in the YUDHA application.",
+      "Contributed to the AI interview workflow and its backend integration.",
+      "Worked on connecting user progress and real-time quiz sessions across the application services."
+    ],
+    "result": "An Open Beta product with a public landing page and a Flutter web prototype. The repository documents mobile and web support, real-time matches, and configurable AI interview services; the voice and AI features depend on backend provider configuration.\n\n- Learning Center with progress summaries and practice recommendations.\n- Solo practice with Standard, Focus, and Speed modes.\n- Real-time PvP quiz battles, characters, daily quests, and leaderboards.\n- Company- and role-specific AI interviews with coaching or realistic modes.\n- Text or voice answers, evaluation, and interview session history.",
+    "selected": true,
+    "year": "2026",
+    "start": "2026-03",
+    "end": "2026-09",
+    "role": "",
+    "tech": [
+      "Flutter",
+      "NestJS",
+      "Gemini",
+      "Dart",
+      "Riverpod",
+      "TypeScript",
+      "Socket.IO",
+      "Supabase",
+      "PostgreSQL",
+      "Redis",
+      "Groq",
+      "ElevenLabs"
+    ],
+    "cover": "assets/projects/yudha-cover-a3cbc223-d440-41c7-96aa-bd351eae67a3.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Prototype",
+        "url": "https://prototype.yudha.fun/"
+      },
+      {
+        "label": "Landing page",
+        "url": "https://yudha.fun/"
+      },
+      {
+        "label": "Source code",
+        "url": "https://github.com/ahmdtrdi/yudha-app/"
+      }
+    ],
+    "source": {
+      "repository": "https://github.com/ahmdtrdi/yudha-app",
+      "revision": "5c634ee410fc372760ca49e94c066934c5dcf3f9",
+      "attachmentRead": true,
+      "references": [
+        "README.md",
+        "apps/mobile/pubspec.yaml",
+        "apps/backend-api/package.json",
+        "apps/backend-game/package.json",
+        "docs/PRD-AI-INTERVIEW.md",
+        "docs/misc/INTERVIEW-SPEECH-ARCHITECTURE.md",
+        "https://yudha.fun/",
+        "https://prototype.yudha.fun/"
+      ],
+      "note": "Dates supplied by Ridho. Feature scope comes from the repository and interview architecture. Beta status is stated on the public landing page. The Flutter prototype loads, but authenticated features were not tested. Cover reuses existing landing-page artwork converted to WebP. The Katingting proposal is a separate project and is not used for this entry. Individual role and contributions await confirmation.",
+      "draftFields": [
+        "role",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "deepfake",
+    "title": "Deepfake — Face & Voice Swap",
+    "category": "Multimedia AI prototype",
+    "categories": [
+      "AI/ML"
+    ],
+    "status": "Prototype",
+    "illustration": "vision",
+    "summary": "A UNITY Techofest project exploring face swapping and kNN-VC voice conversion in one multimedia prototype.",
+    "challengeApproach": "Bring face and voice transformation into a demonstrable multimedia application.\n\nExplore face swapping alongside kNN-VC voice conversion, with Python services and a Flask interface for trying the processing flow.",
+    "contributions": [
+      "Developed the voice-conversion feature with kNN-VC as part of the UNITY grand project.",
+      "Integrated voice processing into the broader face-and-sound swapping prototype.",
+      "Collaborated with the project team on the demonstration workflow."
+    ],
+    "result": "The team presented its Deepfake grand project at UNITY Techofest 2023. The voice-conversion work supported three target voices, as recorded in the cohort experience.\n\n- Face and voice transformation in one project scope.\n- kNN-VC voice conversion.\n- A project demonstration shared by UNITY.",
+    "selected": false,
+    "year": "2023–2024",
+    "start": "2023-07",
+    "end": "2024-01",
+    "role": "Software Engineer / Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "Flask",
+      "gRPC",
+      "kNN-VC"
+    ],
+    "cover": "assets/projects/deepfake-cover-c6247fbd-f13b-49ae-8b81-5c157107a1cc.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Project showcase",
+        "url": "https://www.instagram.com/reel/C036yZCSXKx/?igsh=MWk3eXNjZjV6NGFkZQ=="
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8091-ba37-d7812f471330",
+      "notionTitle": "Deepfake Project (Face and Sound Swap)",
+      "attachmentRead": true,
+      "supportingExperience": "data/experience.json#unity-cohort",
+      "note": "Instagram confirms the UNITY Techofest demonstration. kNN-VC and three voices come from the existing CV-derived experience record. Integration wording is an initial draft.",
+      "draftFields": [
+        "status",
+        "challengeApproach"
+      ]
+    }
+  },
+  {
+    "id": "person-detection",
+    "title": "Person Count & Detection",
+    "category": "Video analytics prototype",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "vision",
+    "summary": "YOLOv8 person detection with object tracking and separate counters for people crossing a boundary in either direction.",
+    "challengeApproach": "Count people moving through a video without treating every detected frame as a new person.\n\nCombine YOLOv8 detections with object IDs and two reference lines, then count crossings in each direction.",
+    "contributions": [
+      "Prepared video frames and filtered YOLO detections to the person class.",
+      "Connected detections to a centroid-based tracker and crossing logic.",
+      "Displayed bounding boxes, object IDs, and separate up/down counters."
+    ],
+    "result": "A video-processing experiment that displays detected people and maintains two directional counts.\n\n- Person-only YOLOv8 detection.\n- Tracked object IDs and reference-line crossings.\n- Annotated video output with up/down counters.",
+    "selected": false,
+    "year": "2023",
+    "start": "2023-10",
+    "end": "2023-10",
+    "role": "Machine Learning Engineer / Software Engineer",
+    "tech": [
+      "YOLOv8",
+      "Python",
+      "OpenCV",
+      "Ultralytics",
+      "pandas"
+    ],
+    "cover": "assets/projects/person-detection-cover-d61c86b5-f132-4552-977b-ce9537a02d3b.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/person-detection"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8072-bf37-c72675018e70",
+      "notionTitle": "Person Count and Detection",
+      "attachmentRead": true,
+      "note": "Features verified in main.py and tracker.py. Individual contribution wording and lifecycle status are drafts; no counting accuracy is claimed.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "tenda-biru",
+    "title": "Tenda Biru",
+    "category": "Stock management web app",
+    "categories": [
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "backend",
+    "summary": "A PHP and MySQL stock-management application for coordinating inventory, supply requests, and food orders.",
+    "challengeApproach": "Replace fragmented stock records and manual supply coordination with a shared application.\n\nUse a relational database and web dashboards to connect stock items, transaction details, supply requests, and food orders.",
+    "contributions": [
+      "Connected PHP pages to stock and transaction records in MySQL.",
+      "Worked on request and order workflows with item quantities and totals.",
+      "Contributed to the web dashboard and role-oriented navigation."
+    ],
+    "result": "A working project codebase for managing stock and operational transactions through a web interface.\n\n- Stock and transaction detail records.\n- Supply-request and food-order workflows.\n- PHP dashboards backed by MySQL.",
+    "selected": false,
+    "year": "2023",
+    "start": "2023-10",
+    "end": "2023-12",
+    "role": "Software Engineer / Full Stack Developer",
+    "tech": [
+      "HTML",
+      "CSS",
+      "PHP",
+      "Bootstrap",
+      "MySQL"
+    ],
+    "cover": "assets/projects/tenda-biru-cover-d40b41d6-e315-4acf-81e1-c9403d1a9a02.webp",
+    "images": [
+      "assets/projects/tenda-biru-images-dd494ac9-00fd-4399-ae5d-c39793aa6e0c.webp",
+      "assets/projects/tenda-biru-images-df383698-84a5-45ff-8f35-515f33a03d21.webp"
+    ],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/RPL-ProjectAkhir"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80cc-a27e-d670af1ae066",
+      "notionTitle": "Tenda Biru - Web-Based Stock Management System",
+      "attachmentRead": true,
+      "note": "Notion description and repository pages/functions.php confirm the scope. Contribution ownership and deployment status remain drafts.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "mood",
+    "title": "MOOD — Emotion Detection",
+    "category": "Multimodal emotion web app",
+    "categories": [
+      "AI/ML",
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "vision",
+    "summary": "An emotion-detection web prototype with separate image and voice analysis flows, built with Flask and machine learning models.",
+    "challengeApproach": "Make image-based and voice-based emotion analysis accessible through one interface.\n\nPreprocess images for a TensorFlow model, extract MFCC/chroma/mel audio features for a separate voice model, and display predictions through Flask pages.",
+    "contributions": [
+      "Prepared image preprocessing and model-inference integration.",
+      "Connected audio feature extraction to voice-emotion prediction.",
+      "Built upload and result flows for the image and sound interfaces."
+    ],
+    "result": "A web prototype that accepts image or audio uploads and displays the corresponding emotion prediction.\n\n- Image classification for sad, happy, neutral, and angry expressions.\n- Voice-emotion prediction from extracted audio features.\n- Image results with confidence and per-class probabilities.",
+    "selected": false,
+    "year": "2023",
+    "start": "2023-11",
+    "end": "2023-12",
+    "role": "Software Engineer / Machine Learning Engineer / Full Stack Developer",
+    "tech": [
+      "Python",
+      "Ngrok",
+      "TensorFlow",
+      "OpenCV",
+      "Librosa",
+      "HTML",
+      "Flask"
+    ],
+    "cover": "assets/projects/mood-cover-9e9273ab-2676-4eba-968c-2d551f6115cc.webp",
+    "images": [
+      "assets/projects/mood-images-357be8a7-d7cb-42b3-8f41-3996141c6afb.webp",
+      "assets/projects/mood-images-1eecdd67-e98b-433c-9487-19e899ca19a2.webp"
+    ],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/Mood-Emotion-Detection"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80b3-9e93-c2160dc56160",
+      "notionTitle": "MOOD - Emotion Detection Based on Images and Sounds",
+      "attachmentRead": true,
+      "note": "Upload routes, preprocessing, emotion classes, and confidence output are verified in app.py. Personal contribution wording and status are initial drafts.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "magic-gamma",
+    "title": "MAGIC — Gamma Prediction",
+    "category": "Classification experiment",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "analytics",
+    "summary": "A classification notebook comparing classical machine learning models on the MAGIC gamma-versus-hadron dataset.",
+    "challengeApproach": "Distinguish gamma signals from hadron background using numerical event features.\n\nExplore feature distributions, standardize the inputs, oversample the training split, and compare kNN, Naive Bayes, logistic regression, and SVM.",
+    "contributions": [
+      "Explored the dataset and prepared training, validation, and test splits.",
+      "Applied scaling and training-set oversampling.",
+      "Compared four classifiers using classification reports."
+    ],
+    "result": "A reproducible notebook for exploring gamma/hadron classification and comparing baseline models.\n\n- Feature-distribution visualizations.\n- Scaling and oversampling experiments.\n- Side-by-side classification reports for four model families.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-01",
+    "end": "2024-01",
+    "role": "Data Scientist / Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "NumPy",
+      "pandas",
+      "scikit-learn",
+      "imbalanced-learn",
+      "Matplotlib"
+    ],
+    "cover": "assets/projects/magic-gamma-cover-f851efbd-d6a0-4dde-862f-8b44f9e60393.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/MAGIC-Gamma-Prediction"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8007-9fe9-e8b59f63fe0b",
+      "notionTitle": "MAGIC - Gamma Prediction",
+      "attachmentRead": true,
+      "note": "Workflow verified in fcc_MAGIC.ipynb. No benchmark score is imported; individual contribution wording is drafted.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "face-feature-extraction",
+    "title": "Face Feature Extraction",
+    "category": "Computer vision notebook",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "vision",
+    "summary": "A Python and OpenCV experiment exploring multiple ways to extract useful visual features from facial images.",
+    "challengeApproach": "Represent facial images as features that can be compared or used in downstream analysis.\n\nExplore image preprocessing and multiple feature-extraction techniques in a notebook, keeping the emphasis on understanding the representations.",
+    "contributions": [
+      "Prepared facial-image preprocessing with Python and OpenCV.",
+      "Explored multiple feature-extraction approaches.",
+      "Organized feature outputs for comparison and inspection."
+    ],
+    "result": "An exploratory notebook for representing facial images through multiple feature-extraction approaches.\n\n- Facial-image preprocessing.\n- Multiple feature representations.\n- Notebook-based feature inspection.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-04",
+    "end": "2024-04",
+    "role": "Machine Learning Engineer / Data Scientist",
+    "tech": [
+      "Python",
+      "OpenCV"
+    ],
+    "cover": "assets/projects/face-feature-extraction-cover-820e5d2f-b88b-4bf9-a0bd-711cfc75214e.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1fWL4eteuNqEW4iecbvZua16FehFIqDI3"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80bf-a8e9-ca6d5c1354a7",
+      "notionTitle": "Image Face Feature Extraction using Multiple Technique",
+      "attachmentRead": false,
+      "note": "The Colab link could not be read through the web tool; the browser required Google sign-in. Copy is drafted from the title and Notion metadata.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "tweet-sentiment-tuning",
+    "title": "Tweet Sentiment Analysis using Hyperparameter Tuning",
+    "category": "NLP classification notebook",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "analytics",
+    "summary": "An Indonesian tweet-sentiment experiment focused on text preprocessing, model configuration, and hyperparameter tuning.",
+    "challengeApproach": "Handle informal Indonesian text while exploring how model settings affect sentiment classification.\n\nPrepare tweet text, build classification experiments with scikit-learn, and compare hyperparameter configurations.",
+    "contributions": [
+      "Prepared Indonesian tweet text for sentiment analysis.",
+      "Explored classifier settings and hyperparameter tuning.",
+      "Organized evaluation comparisons across model configurations."
+    ],
+    "result": "An NLP experiment focused on Indonesian tweet sentiment and model configuration through hyperparameter tuning.\n\n- Indonesian tweet preprocessing.\n- Hyperparameter comparisons.\n- Sentiment-classification evaluation workflow.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-05",
+    "end": "2024-05",
+    "role": "Machine Learning Engineer / Data Scientist",
+    "tech": [
+      "Python",
+      "scikit-learn",
+      "NLP"
+    ],
+    "cover": "assets/projects/tweet-sentiment-tuning-cover-fc7ec30c-0694-4258-aa38-48575006cb9a.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1Zjb-tCPmE7itUIBfMCXgMmDKcTTdX-ce"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8040-9b24-ecd009ace686",
+      "notionTitle": "Sentiment Analysis on Indonesian Tweet Using Hyperparamter Tuning",
+      "attachmentRead": false,
+      "note": "Colab requires sign-in in the available browser. Details are drafts based on the title and Python / scikit-learn / NLP metadata.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "public-service-sentiment-ner",
+    "title": "Public-Service Sentiment & NER",
+    "category": "NLP analysis notebook",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Research",
+    "illustration": "analytics",
+    "summary": "An NLP study combining sentiment analysis and named-entity recognition to explore public opinions about government services.",
+    "challengeApproach": "Connect the tone of public feedback with the entities and services mentioned in the text.\n\nExplore sentiment classification alongside named-entity recognition so that opinions can be interpreted in context.",
+    "contributions": [
+      "Prepared text for a public-service sentiment-analysis workflow.",
+      "Explored named-entity recognition alongside sentiment labels.",
+      "Organized the analysis of opinions and mentioned entities."
+    ],
+    "result": "An NLP study connecting sentiment analysis with the entities mentioned in government-service feedback.\n\n- Sentiment analysis of public feedback.\n- Named-entity extraction.\n- Joint inspection of opinions and entities.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-05",
+    "end": "2024-05",
+    "role": "Machine Learning Engineer / Data Scientist",
+    "tech": [
+      "Python",
+      "NER",
+      "NLP",
+      "TensorFlow"
+    ],
+    "cover": "assets/projects/public-service-sentiment-ner-cover-a404db1c-201d-4b6d-a688-8678f29ae70a.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1OBOvHQ2zdSZ5-wQM4Wt1pu9ClzEiyg6m"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80e6-9c92-e4595fea3965",
+      "notionTitle": "Sentiment Analysis and NER Technique for Public Sentiment on Goverment Service",
+      "attachmentRead": false,
+      "note": "The linked Colab notebook was not accessible without Google sign-in. Copy is drafted from the title and listed technologies.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "volcanic-ash",
+    "title": "Volcanic Ash Eruption Simulation",
+    "category": "Cellular automata simulation",
+    "categories": [
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "pipeline",
+    "summary": "A cellular-automata experiment exploring how volcanic ash can be represented through local rules on a spatial grid.",
+    "challengeApproach": "Explore a complex spreading process through a simple, inspectable computational model.\n\nRepresent the simulation on a grid and update its cells through local rules, with the aim of observing changes over successive steps.",
+    "contributions": [
+      "Explored a grid-based representation for volcanic ash.",
+      "Drafted the local update-rule workflow for a cellular automata model.",
+      "Organized simulation outputs for inspection over time."
+    ],
+    "result": "An experimental grid-based simulation exploring volcanic ash through cellular-automata updates.\n\n- Grid-based representation.\n- Iterative cellular-automata updates.\n- Inspection of simulated spreading patterns.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-06",
+    "end": "2024-06",
+    "role": "Data Scientist",
+    "tech": [
+      "Python",
+      "scikit-learn"
+    ],
+    "cover": "assets/projects/volcanic-ash-cover-dd3910c2-9b95-4110-8a2c-1ff78ad832c0.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1TvHluvGY8VpicRbKJjxNxzLV0ERPvd4H"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80bf-a72d-e9eedc71924e",
+      "notionTitle": "Volcanic-ash Eruption Simulation Using Cellular Automation",
+      "attachmentRead": false,
+      "note": "Colab content could not be inspected without Google sign-in. The title says Cellular Automation; the portfolio uses the conventional term Cellular automata. No predictive validity is claimed.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "rock-paper-scissors",
+    "title": "Rock-Paper-Scissors Classifier",
+    "category": "Image classification notebook",
+    "categories": [
+      "AI/ML"
+    ],
+    "status": "Experiment",
+    "illustration": "vision",
+    "summary": "A TensorFlow computer-vision experiment for classifying images of rock, paper, and scissors hand gestures.",
+    "challengeApproach": "Recognize three hand-gesture classes from image inputs.\n\nExplore image preprocessing and a TensorFlow classification workflow, using OpenCV for image handling and inspection.",
+    "contributions": [
+      "Prepared hand-gesture images for classification.",
+      "Explored a TensorFlow image-classification workflow.",
+      "Organized sample predictions and model evaluation."
+    ],
+    "result": "An image-classification experiment separating rock, paper, and scissors gestures using a TensorFlow workflow.\n\n- Three hand-gesture classes.\n- Image preprocessing.\n- Notebook-based prediction experiments.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-06",
+    "end": "2024-06",
+    "role": "Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "TensorFlow",
+      "OpenCV"
+    ],
+    "cover": "assets/projects/rock-paper-scissors-cover-19e619ab-862e-4dc7-b67b-76b14ad0f1a9.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1799c4GhUjjm5TAJ49qMoJGHGSFRAtiFn"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8091-8da7-de7a073a0a06",
+      "notionTitle": "Rock-Paper-Scissors Image Classification",
+      "attachmentRead": false,
+      "note": "The Colab notebook was not accessible through the available tools without sign-in. Copy is drafted from the title and TensorFlow / OpenCV metadata.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "unity-division-recommendation",
+    "title": "UNITY Division Recommendation",
+    "category": "Community recommendation app",
+    "categories": [
+      "AI/ML"
+    ],
+    "status": "Prototype",
+    "illustration": "recommendation",
+    "summary": "An SVM-based recommendation tool that maps questionnaire responses to a suitable division in the UNSRAT IT Community.",
+    "challengeApproach": "Help community members explore a division that matches their interests.\n\nConvert questionnaire responses into numeric inputs, predict a division with an SVM classifier, and expose the model through a Gradio interface.",
+    "contributions": [
+      "Led and coordinated the machine-learning project with the UNITY team.",
+      "Worked on the SVM-based division recommendation workflow.",
+      "Connected questionnaire inputs and model predictions to the public demo."
+    ],
+    "result": "A questionnaire-based division recommendation prototype with a reported F1-score of 0.91.\n\n- Four-level questionnaire responses.\n- SVM-based division prediction.\n- A Gradio demo hosted on Hugging Face Spaces.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-06",
+    "end": "2024-07",
+    "role": "Data Scientist / Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "TensorFlow",
+      "scikit-learn",
+      "Gradio"
+    ],
+    "cover": "assets/projects/unity-division-recommendation-cover-69f3bd0a-b656-4eb3-b185-6db29d514ba8.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Live demo",
+        "url": "https://huggingface.co/spaces/idoo0/divisi-recomendation-unity"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8012-af55-e7704872e908",
+      "notionTitle": "UNITY Division Recomendation",
+      "attachmentRead": true,
+      "supportingExperience": "data/experience.json#unity-lead",
+      "note": "Questionnaire and prediction flow verified in the Hugging Face app.py. Leadership and F1-score come from the existing CV-derived UNITY lead experience.",
+      "draftFields": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "unity-chatbot",
+    "title": "UNITY Chatbot",
+    "category": "Community knowledge chatbot",
+    "categories": [
+      "AI/ML"
+    ],
+    "status": "Prototype",
+    "illustration": "agent",
+    "summary": "A community chatbot combining FAQ similarity retrieval with a generative response path for questions about UNITY.",
+    "challengeApproach": "Make community information easier to find through a conversational interface.\n\nPreprocess questions, compare TF-IDF representations against an FAQ collection, return a matching answer when confidence is sufficient, and use a generative response path otherwise.",
+    "contributions": [
+      "Led the UNITY machine-learning team in delivering the chatbot project.",
+      "Worked on question preprocessing, FAQ retrieval, and answer generation.",
+      "Coordinated manual QA and the community-facing chat demonstration."
+    ],
+    "result": "A Gradio chatbot prototype backed by community FAQ retrieval and a generative fallback, with 90% answer accuracy reported in manual quality assurance.\n\n- TF-IDF and cosine-similarity FAQ retrieval.\n- A generative response fallback.\n- Conversational access through Hugging Face Spaces.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-06",
+    "end": "2024-07",
+    "role": "Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "Gemini",
+      "Generative AI",
+      "RAG",
+      "scikit-learn",
+      "Gradio",
+      "NLTK"
+    ],
+    "cover": "assets/projects/unity-chatbot-cover-42c97675-0e7b-44ac-8999-16a75dd6b230.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Live demo",
+        "url": "https://huggingface.co/spaces/idoo0/chatbot-unity"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80df-8f74-cfbf6510aa48",
+      "notionTitle": "UNITY Chatbot",
+      "attachmentRead": true,
+      "supportingExperience": "data/experience.json#unity-lead",
+      "note": "Retrieval and generative fallback verified in the Hugging Face app.py. Manual QA accuracy and leadership come from the existing CV-derived experience. The Space was sleeping at the time of inspection.",
+      "draftFields": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "rekomenin",
+    "title": "REKOMENIN",
+    "category": "Coffee-shop recommendation web app",
+    "categories": [
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "recommendation",
+    "summary": "A coffee-shop recommendation website for students, built around cafe attributes such as distance, price, and available facilities.",
+    "challengeApproach": "Help students compare coffee shops using criteria relevant to their needs.\n\nStore structured cafe information and connect it to a recommendation and search experience, with an administration flow for maintaining the catalog.",
+    "contributions": [
+      "Worked on PHP pages for browsing and searching cafe information.",
+      "Connected cafe attributes to the recommendation workflow.",
+      "Prepared cafe catalog management and image-upload handling."
+    ],
+    "result": "A web project with a structured coffee-shop catalog and management screens.\n\n- Cafe attributes including distance, price, facilities, and taste.\n- Search and recommendation-oriented pages.\n- Cafe record creation, updates, deletion, and image uploads.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-06",
+    "end": "2024-06",
+    "role": "Full Stack Developer",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL"
+    ],
+    "cover": "assets/projects/rekomenin-cover-21305f4d-4a49-4136-bb02-8c75910a59dd.webp",
+    "images": [
+      "assets/projects/rekomenin-images-b5067b90-a59b-4c33-9cee-f5347deaa913.webp",
+      "assets/projects/rekomenin-images-b15551f8-dd11-4c8e-85ce-66943536feab.webp"
+    ],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/sistem-pakar"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80d8-87d7-f76eb522e73d",
+      "notionTitle": "REKOMENIN: Coffe Shop Recomendation at Universities",
+      "attachmentRead": true,
+      "note": "Cafe attributes and catalog operations verified in cafeController.php; search/recommendation page filenames are present. Recommendation algorithm and personal contributions are not fully verified.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "bike-analytics",
+    "title": "Bike Sharing Analytics",
+    "category": "Analytics dashboard",
+    "categories": [
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "analytics",
+    "summary": "A Streamlit dashboard exploring bike-sharing demand by weekday, hour, customer segment, working-day status, and season.",
+    "challengeApproach": "Turn daily and hourly rental records into understandable demand patterns.\n\nAggregate rentals with pandas and present focused bar charts and correlation heatmaps in a Streamlit dashboard.",
+    "contributions": [
+      "Prepared daily and hourly bike-sharing data for analysis.",
+      "Compared total, registered, and casual rentals across time segments.",
+      "Built Streamlit charts and concise analytical explanations."
+    ],
+    "result": "An analytics dashboard for inspecting bike-sharing patterns across time and customer segments.\n\n- Weekday and hourly demand charts.\n- Registered-versus-casual comparisons.\n- Working-day, holiday, and seasonal correlation views.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-10",
+    "end": "2024-10",
+    "role": "Data Analyst / Data Scientist",
+    "tech": [
+      "Python",
+      "pandas",
+      "NumPy",
+      "Streamlit",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "cover": "assets/projects/bike-analytics-cover-23a1bcdc-e50e-460f-9ea0-8cf8a05f656d.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/tugas-analisis-data"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-802f-91ed-d886bd67d5eb",
+      "notionTitle": "Bike Analytic Data Project",
+      "attachmentRead": true,
+      "note": "Charts and analytical dimensions verified in app.py. Contribution wording is drafted; numerical conclusions from the code were not imported without recomputation.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "desa-lansot",
+    "title": "Desa Lansot Profile",
+    "category": "Village information website",
+    "categories": [
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "backend",
+    "summary": "A village-profile website for presenting Desa Lansot information through an accessible public web interface.",
+    "challengeApproach": "Give residents and visitors a straightforward place to learn about the village.\n\nOrganize village-profile information into a PHP-based website with Bootstrap layouts and JavaScript interactions.",
+    "contributions": [
+      "Drafted the public-facing village profile and navigation structure.",
+      "Worked on PHP pages and responsive Bootstrap layouts.",
+      "Prepared the content presentation for village information."
+    ],
+    "result": "A village-profile web project presenting Desa Lansot through a PHP-based interface with responsive layouts.\n\n- Public village-profile presentation.\n- Responsive page layouts.\n- PHP and JavaScript website structure.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-10",
+    "end": "2024-12",
+    "role": "Full Stack Developer",
+    "tech": [
+      "PHP",
+      "Bootstrap",
+      "JavaScript"
+    ],
+    "cover": "assets/projects/desa-lansot-cover-e25ba82a-cc02-428e-9866-a2f77d3d5709.webp",
+    "images": [
+      "assets/projects/desa-lansot-images-bb8c886d-f45b-4f86-bc43-f6b6aa861654.webp",
+      "assets/projects/desa-lansot-images-4e549f00-2327-4a8e-b105-3f5d56ac1fc7.webp",
+      "assets/projects/desa-lansot-images-de4d960c-9182-464f-b771-0379defb5159.webp",
+      "assets/projects/desa-lansot-images-41d29a42-3aad-4226-8a7e-81d4d70dade1.webp"
+    ],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/web-desa-lansot"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80a3-ba14-cee709c4ad95",
+      "notionTitle": "Desa Lansot Profile Page",
+      "attachmentRead": false,
+      "note": "The linked GitHub repository returned 404 during inspection. The URL is retained; copy is drafted from the title, role, and PHP / Bootstrap / JavaScript metadata.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "desa-tetey",
+    "title": "Desa Tetey Profile",
+    "category": "Village information website",
+    "categories": [
+      "Web"
+    ],
+    "status": "Prototype",
+    "illustration": "backend",
+    "summary": "A PHP-based village-profile website for presenting Desa Tetey information in a simple, responsive format.",
+    "challengeApproach": "Present village information in a format that residents and visitors can browse easily.\n\nUse a clear page structure with PHP, Bootstrap, and JavaScript to organize the village profile and its public content.",
+    "contributions": [
+      "Drafted the village-profile content structure and navigation.",
+      "Worked on responsive layouts and PHP page integration.",
+      "Prepared public information pages for the village website."
+    ],
+    "result": "A village-profile web project presenting Desa Tetey information through a PHP-based interface.\n\n- Village-profile content.\n- Responsive Bootstrap layouts.\n- PHP and JavaScript page integration.",
+    "selected": false,
+    "year": "2024",
+    "start": "2024-10",
+    "end": "2024-10",
+    "role": "Full Stack Developer",
+    "tech": [
+      "PHP",
+      "Bootstrap",
+      "JavaScript"
+    ],
+    "cover": "assets/projects/desa-tetey-cover-738471e3-03ac-4d3f-93e0-cf727d9bc770.webp",
+    "images": [
+      "assets/projects/desa-tetey-images-0754f625-22ed-4a6e-8201-e511d8ea5c33.webp",
+      "assets/projects/desa-tetey-images-2184b832-8ef3-44f0-a3ce-e7ae11ffb457.webp",
+      "assets/projects/desa-tetey-images-eb968c7e-1218-4228-8762-a3e78b675ed5.webp",
+      "assets/projects/desa-tetey-images-9d837f37-e98d-44d3-bce6-b966ca93014b.webp"
+    ],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/web-desa-2"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80d5-abe1-d66cd2ee74c1",
+      "notionTitle": "Desa Tetey Profile Page",
+      "attachmentRead": false,
+      "note": "The linked GitHub repository returned 404 during inspection. Copy is drafted from the title and Notion metadata; the original URL is preserved.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "yuktanam",
+    "title": "YukTanam",
+    "category": "Plant-health AI API",
+    "categories": [
+      "AI/ML",
+      "Mobile"
+    ],
+    "status": "Prototype",
+    "illustration": "vision",
+    "summary": "The AI API behind a gamified planting application, combining ResNet50 disease predictions with readable plant-care information.",
+    "challengeApproach": "Connect plant-image predictions to information that users of a planting app can understand.\n\nRun a ResNet50 image model behind a Flask REST API and combine the prediction output with a language-model response for plant identification and care guidance.",
+    "contributions": [
+      "Collaborated on the Bangkit capstone plant-disease model with a ResNet backbone.",
+      "Connected image preprocessing and model inference to a prediction endpoint.",
+      "Worked on structured responses containing plant and disease information."
+    ],
+    "result": "A plant-disease prediction API for the YukTanam capstone, with 77% classification accuracy reported for the model.\n\n- Plant-image upload and ResNet50 inference.\n- JSON responses with disease descriptions and care/prevention information.\n- A plant-health score returned with the prediction response.",
+    "selected": true,
+    "year": "2024",
+    "start": "2024-11",
+    "end": "2024-12",
+    "role": "Machine Learning Engineer / Backend Developer",
+    "tech": [
+      "Python",
+      "REST API",
+      "TensorFlow",
+      "Transformers",
+      "Flask",
+      "ResNet50",
+      "LangChain"
+    ],
+    "cover": "assets/projects/yuktanam-cover-7192d963-496d-44c2-b86d-3cdf39ddaf7f.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Idoo0/YukTanam-ml-api"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80a5-9f19-e2b8fbbe0b01",
+      "notionTitle": "YukTanam - Gamified Planting Application with AI Plant Disease Detection",
+      "attachmentRead": true,
+      "supportingExperience": "data/experience.json#bangkit",
+      "note": "API and ResNet50 workflow verified in README, app.py, and predict.py. Model accuracy and capstone participation come from the existing CV-derived Bangkit experience.",
+      "draftFields": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "gojek-review-classification",
+    "title": "Gojek Reviews with LLM as Annotator",
+    "category": "NLP classification experiment",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "analytics",
+    "summary": "An app-review classification experiment exploring Gemini as a text annotator alongside a scikit-learn workflow.",
+    "challengeApproach": "Explore how an LLM can help label app-review text for classification experiments.\n\nUse Gemini-assisted annotation as part of a Python workflow, then organize review text and labels for analysis and model experiments.",
+    "contributions": [
+      "Prepared a review-text processing workflow.",
+      "Explored Gemini-assisted annotation for Gojek app reviews.",
+      "Organized the labeled review data for classification experiments."
+    ],
+    "result": "An app-review classification experiment exploring LLM-assisted annotation with Gemini.\n\n- Gojek app-review text analysis.\n- Gemini-assisted annotation.\n- A Python and scikit-learn experiment workflow.",
+    "selected": false,
+    "year": "2025",
+    "start": "2025-03",
+    "end": "2025-03",
+    "role": "Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "Gemini",
+      "scikit-learn"
+    ],
+    "cover": "assets/projects/gojek-review-classification-cover-f6682b06-47f4-4a03-9c5f-d7bead4c4922.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1XGQN51VnbdT8piGI7ebE8rcw9HNOrOnS#scrollTo=0mCnYTc-1S3g"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-800f-9b6d-c9597c92fea6",
+      "notionTitle": "Gojek Apss Reviews Classification with LLM as annotators",
+      "attachmentRead": false,
+      "note": "The Colab link could not be read without Google sign-in. No dataset size, label scheme, or quality score is inferred.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "heart-attack-scratch",
+    "title": "Heart Attack Classification using Neural Network from Scratch",
+    "category": "Educational ML notebook",
+    "categories": [
+      "AI/ML",
+      "Data"
+    ],
+    "status": "Experiment",
+    "illustration": "analytics",
+    "summary": "An educational classification experiment implementing a neural network from scratch with Python and NumPy.",
+    "challengeApproach": "Understand neural-network classification by implementing the learning steps directly.\n\nExplore a tabular heart-attack classification dataset and build a NumPy-based workflow for prediction and training.",
+    "contributions": [
+      "Prepared tabular features and labels for the experiment.",
+      "Explored the neural-network implementation with Python and NumPy.",
+      "Organized training and prediction checks in a notebook."
+    ],
+    "result": "An educational classification notebook focused on implementing the neural-network learning process with Python and NumPy.\n\n- Tabular binary-classification scope.\n- A NumPy-based neural-network implementation.\n- Training and prediction experiments.",
+    "selected": false,
+    "year": "2025",
+    "start": "2025-06",
+    "end": "2025-06",
+    "role": "Data Scientist / Machine Learning Engineer",
+    "tech": [
+      "Python",
+      "NumPy"
+    ],
+    "cover": "assets/projects/heart-attack-scratch-cover-b3dddb76-4e7b-4ce5-89d7-932715b87011.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://colab.research.google.com/drive/1qAXp2dzuaSODdSznI6z-fLqLthu5LH1o"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-8035-9911-f1a855502e1a",
+      "notionTitle": "Heart Attack Classification using Neural Network from Scratch",
+      "attachmentRead": false,
+      "note": "The Colab notebook could not be inspected without Google sign-in. Copy is drafted from the title and Python / NumPy metadata; no clinical or accuracy claim is made.",
+      "draftFields": [
+        "status",
+        "summary",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "automatic-waste-sorting",
+    "title": "Automatic Waste Sorting",
+    "category": "Embedded / IoT prototype",
+    "categories": [
+      "IoT/Hardware"
+    ],
+    "status": "Prototype",
+    "illustration": "pipeline",
+    "summary": "An Arduino-based automatic waste-sorting prototype developed as part of a technology-led community program on Derawan Island.",
+    "challengeApproach": "Explore a practical way to support waste separation within the community program.\n\nUse Arduino and C++ to coordinate the control flow of an automatic sorting prototype for the community project.",
+    "contributions": [
+      "Contributed to the automatic waste-sorting project in the Genera-Z community program.",
+      "Worked on the Arduino and C++ control-program scope.",
+      "Collaborated on the prototype and community demonstration workflow."
+    ],
+    "result": "An Arduino and C++ waste-sorting prototype developed through the Genera-Z community program on Derawan Island.\n\n- Arduino-based control.\n- Automatic waste-sorting project scope.\n- A prototype developed for the Derawan community program.",
+    "selected": false,
+    "year": "2025",
+    "start": "2025-07",
+    "end": "2025-07",
+    "role": "Software Engineer / Machine Learning Engineer",
+    "tech": [
+      "Arduino",
+      "C++"
+    ],
+    "cover": "assets/projects/automatic-waste-sorting-cover-ae848d20-6343-48c2-b879-46f405f478be.webp",
+    "images": [],
+    "links": [],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80a0-ab18-d85d0b1b8aa1",
+      "notionTitle": "Automatic Sorting Trash Can",
+      "attachmentRead": false,
+      "supportingExperience": "data/experience.json#genera-z",
+      "note": "Notion contains FOTO rather than a photo URL. Arduino/C++ are listed in Notion; project participation is supported by the CV-derived Genera-Z experience. Hardware details and exact personal tasks are drafts. This project is categorized under IoT/Hardware and is visible in that filter and All.",
+      "draftFields": [
+        "status",
+        "challengeApproach",
+        "contributions",
+        "result"
+      ]
+    }
+  },
+  {
+    "id": "derawanup",
+    "title": "DerawanUp",
+    "category": "Community health mobile app",
+    "categories": [
+      "Mobile",
+      "AI/ML"
+    ],
+    "status": "Prototype",
+    "illustration": "backend",
+    "summary": "A Flutter community-health app for Derawan Island, combining stunting-related information, monitoring features, and a Gemini chat companion.",
+    "challengeApproach": "Bring stunting literacy and monitoring-related information into a mobile experience for the local community.\n\nUse Flutter for the app interface and connect educational content, community-health modules, and a Gemini-powered chat service.",
+    "contributions": [
+      "Contributed to the community mobile-app project during the Genera-Z program.",
+      "Worked on Flutter screens and health-information presentation.",
+      "Collaborated on the app integration and AI-assisted chat direction."
+    ],
+    "result": "A Flutter application codebase with community-health features and a documented Gemini chat integration.\n\n- Health and stunting information through the app.\n- Dashboard, ebook, and posyandu module structure.\n- A Gemini chat service with a defined fallback response path.",
+    "selected": false,
+    "year": "2025",
+    "start": "2025-07",
+    "end": "2025-07",
+    "role": "Software Engineer / Mobile Developer",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Gemini"
+    ],
+    "cover": "assets/projects/derawanup-cover-af6f4388-be6c-4be3-871e-76f2a7658b97.webp",
+    "images": [],
+    "links": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/Gifriend/backti_cilik"
+      }
+    ],
+    "source": {
+      "notionPage": "https://app.notion.com/p/0ba1526607a84f058770257224881307?v=026333ba8ec246df9c2d110964a78676",
+      "notionId": "2c6add7e-caa3-80f4-b096-f23dabc89276",
+      "notionTitle": "DerawanUp: Stunting Monitoring and Helth Education for Derawan Island Residents",
+      "attachmentRead": true,
+      "supportingExperience": "data/experience.json#genera-z",
+      "note": "Flutter modules and Gemini integration verified in the repository and README_GEMINI.md. Community contribution comes from the existing CV-derived Genera-Z experience; exact task ownership and deployment status are drafts.",
+      "draftFields": [
+        "status",
+        "contributions"
+      ]
+    }
+  },
+  {
+    "id": "kawanua-tumoutou",
+    "title": "Kawanua TumouTou",
+    "category": "Community service program",
+    "categories": [],
+    "status": "Archived",
+    "selected": false,
+    "start": "2025-07",
+    "end": "2025-07",
+    "year": "2025",
+    "role": "Community Service Team Member",
+    "illustration": "pipeline",
+    "cover": "assets/projects/kawanua-tumoutou-cover-82aa7fc7-8a5d-4933-ab46-8e51fe762a4e.webp",
+    "summary": "A community-service program on Derawan Island, working with residents and schools to promote health, hygiene, nutrition awareness, and care for the coastal environment.",
+    "challengeApproach": "Health literacy, child nutrition, everyday hygiene, and environmental care are shared challenges for the Derawan Island community. Kawanua TumouTou brought together ten Universitas Sam Ratulangi students through Genera-Z Berbakti to support residents through practical, participatory community activities.\n\nDuring 3–31 July 2025, the team worked with residents, schools, health workers, and the village government. The approach combined health and nutrition education, discussions with families, hygiene demonstrations for schoolchildren, shared physical activities, and coastal cleanup. Local participation and collaboration shaped the activities around the community’s everyday needs.",
+    "contributions": [
+      "Worked with a multidisciplinary student team to deliver community-service activities on Derawan Island.",
+      "Took part in community engagement and health and nutrition education with residents and schoolchildren.",
+      "Participated in coastal cleanup and environmental-care activities with the local community.",
+      "Supported collaboration with residents and local stakeholders throughout the field program."
+    ],
+    "result": "The team completed 20 community programs across health, education, and the environment. The final report calculated an overall Social Return on Investment (SROI) of 2.64, representing an estimated Rp2.64 in social value for every Rp1 invested in the full program.\n\n- Health and nutrition education, including balanced diets, child nutrition, and prevention awareness.\n- Hands-on hygiene learning for schoolchildren, including handwashing and toothbrushing demonstrations.\n- Community discussions, shared physical activities, and support for local health-education activities.\n- Coastal cleanup and activities that encouraged residents to care for their environment.\n- Collaboration with schools, health workers, and village stakeholders to support continued community learning.",
+    "tech": [],
+    "images": [
+      {
+        "src": "assets/projects/kawanua-tumoutou-nutrition-education.webp",
+        "alt": "Balanced-nutrition education with students on Derawan Island"
+      },
+      {
+        "src": "assets/projects/kawanua-tumoutou-hygiene-practice.webp",
+        "alt": "Students practising toothbrushing during the Bakti Bersih hygiene activity"
+      },
+      {
+        "src": "assets/projects/kawanua-tumoutou-resident-discussion.webp",
+        "alt": "Community health discussion and questions with Derawan residents"
+      },
+      {
+        "src": "assets/projects/kawanua-tumoutou-school-community.webp",
+        "alt": "Kawanua TumouTou team with schoolchildren after a community education activity"
+      }
+    ],
+    "links": [
+      {
+        "label": "Pitch deck",
+        "url": "https://www.canva.com/design/DAGuQCCOQ0M/5hmLEq0Mw3mxCZvapgZhBg/edit"
+      }
+    ],
+    "source": {
+      "pitchDeck": "https://www.canva.com/design/DAGuQCCOQ0M/5hmLEq0Mw3mxCZvapgZhBg/edit",
+      "pitchDeckRead": true,
+      "attachmentRead": true,
+      "finalReport": "Laporan Akhir Pengabdian Masyarakat Pulau Derawan 2025 BCA_compressed (1).pdf",
+      "reportPages": [
+        1,
+        4,
+        5,
+        37,
+        46,
+        50,
+        51,
+        88,
+        89,
+        92
+      ],
+      "supportingExperience": "data/experience.json#genera-z",
+      "note": "Revised at the owner’s request to focus on community service, resident participation, education, and environmental activities. Dates, team size, program count, reported overall SROI, and activity context come from the final report. Personal community participation is supported by the existing Genera-Z experience and activity documentation. Four activity photos were extracted from the report and converted to WebP; the coastal-cleanup photo comes from the existing experience assets. The original report remains a source because it contains private contact and identification details. Archived indicates the completed field program. This entry appears in All because the six Selected slots are already occupied.",
+      "draftFields": []
+    }
+  }
+]

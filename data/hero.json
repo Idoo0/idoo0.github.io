@@ -1,0 +1,13 @@
+{
+  "name": "Ridho Aditya",
+  "brand": "RIDHO ADITYA",
+  "intro": "I can be your...",
+  "portrait": "assets/images/portrait.jpg",
+  "background": "assets/images/hero-landscape.webp",
+  "scrollLabel": "scroll down for why me?",
+  "roles": [
+    { "key": "software", "title": "Software", "stack": [["cpp", "C++"], ["java", "Java"], ["js", "JavaScript"]] },
+    { "key": "ai", "title": "AI", "stack": [["python", "Python"], ["langchain", "LangChain"], ["gemini", "Gemini"]] },
+    { "key": "data", "title": "Data", "stack": [["pandas", "pandas"], ["kafka", "Kafka"], ["hadoop", "Hadoop"]] }
+  ]
+}

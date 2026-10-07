@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Ridho Aditya - Portofolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/ridho-aditya-logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="admin-brand" href="../" target="_blank" rel="noopener"><img src="../assets/images/ridho-aditya-logo.svg" width="26" height="26" alt="" aria-hidden="true">RIDHO ADITYA<span>LOCAL ADMIN</span></a>
+    <p class="nav-label">CONTENT</p>
+    <nav id="collection-nav" aria-label="Content collections"></nav>
+    <p class="sidebar-note">Edit locally.<br>Upload when ready.</p>
+  </aside>
+  <main class="admin-main">
+    <header class="admin-header"><div><p class="eyebrow">YOUR CONTENT, YOUR FILES</p><h1>Content studio<span>.</span></h1></div><a class="button subtle" href="../" target="_blank" rel="noopener">Open portfolio <span aria-hidden="true">↗</span></a></header>
+    <div class="connection-message" id="connection-message" hidden role="alert"></div>
+    <section class="content-panel" aria-labelledby="collection-title">
+      <div class="collection-heading"><div><h2 id="collection-title">Experience</h2><p id="collection-description"></p></div><span class="local-badge"><i></i>LOCAL FILES</span></div>
+      <div class="toolbar"><div class="view-switch" role="group" aria-label="Editor mode"><button type="button" id="form-mode" aria-pressed="true">Form</button><button type="button" id="json-mode" aria-pressed="false">JSON</button></div><p class="file-path" id="file-path">data/experience.json</p><div class="save-actions"><button class="button subtle" id="reload-data" type="button">Reload</button><button class="button primary" id="save-data" type="button" disabled>Save changes</button></div></div>
+      <p class="save-status" id="save-status" role="status" aria-live="polite">Loading local data…</p>
+      <div class="validation-errors" id="validation-errors" hidden role="alert"></div>
+      <div class="workspace" id="form-workspace">
+        <aside class="records-panel" id="records-panel" aria-label="Collection items"><div class="records-heading"><p id="record-count"></p><button type="button" class="button small" id="add-record">+ Add</button></div><div class="records-list" id="records-list"></div></aside>
+        <div class="editor-panel"><div class="editor-heading"><div><p class="eyebrow" id="item-eyebrow">EDIT ITEM</p><h3 id="item-title"></h3></div><div class="item-actions" id="item-actions"><button type="button" class="icon-button" id="move-up" aria-label="Move selected item up">↑</button><button type="button" class="icon-button" id="move-down" aria-label="Move selected item down">↓</button><button type="button" class="button danger" id="delete-record">Hapus item</button></div></div><form class="editor-fields" id="editor-fields" autocomplete="off"></form><p class="empty-message" id="empty-message" hidden>No items yet. Add your first one.</p></div>
+      </div>
+      <div class="json-workspace" id="json-workspace" hidden><label for="json-editor">Full JSON data</label><p>Semua field tetap dipertahankan, termasuk field tambahanmu. Save changes langsung menyimpan JSON ini.</p><textarea id="json-editor" spellcheck="false" aria-describedby="json-editor-help"></textarea><div class="json-footer"><p id="json-editor-help">Ctrl / Cmd + S untuk menyimpan.</p><button type="button" class="button" id="apply-json">Apply to form</button></div></div>
+    </section>
+  </main>
+  <dialog class="confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-copy"><h2 id="confirm-title"></h2><p id="confirm-copy"></p><div><button type="button" class="button subtle" id="confirm-cancel" autofocus>Cancel</button><button type="button" class="button primary" id="confirm-ok">Continue</button></div></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
