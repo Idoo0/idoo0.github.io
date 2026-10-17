@@ -15,6 +15,7 @@ test('Local saves persist JSON, preserve unknown fields, back up the previous ve
   const original={email:'hello@example.com',linkedin:'',github:'',cv:'',cvFilename:'CV.pdf',customField:{keep:true}};
   const file=path.join(root,'data/contact.json');const originalBytes=JSON.stringify(original,null,2)+'\n';await fs.writeFile(file,originalBytes);
   await fs.writeFile(path.join(root,'index.html'),'<main>Static portfolio</main>');
+  await fs.writeFile(path.join(root,'admin','photo-order.js'),'export const ordering = true;');
   const server=createPortfolioServer({root});server.listen(0,'127.0.0.1');await once(server,'listening');
   const origin=`http://127.0.0.1:${server.address().port}`,url=origin+'/admin/api/data/contact';
   t.after(async()=>{
@@ -43,6 +44,7 @@ test('Local saves persist JSON, preserve unknown fields, back up the previous ve
   assert.equal((await fetch(origin+'/admin/api/data/unknown')).status,404);
   assert.equal((await fetch(origin+'/admin/.backups/contact.json')).status,404);
   assert.equal((await fetch(origin+'/server.mjs')).status,404);
+  assert.equal((await fetch(origin+'/admin/photo-order.js')).status,200);
   assert.equal((await fetch(origin+'/')).status,200);
   const adminRedirect=await fetch(origin+'/admin',{redirect:'manual'});
   assert.equal(adminRedirect.status,308);assert.equal(adminRedirect.headers.get('location'),'/admin/');

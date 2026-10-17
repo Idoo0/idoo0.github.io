@@ -108,7 +108,7 @@ export function createPortfolioServer({root,githubPreview=fetchGithubPreview}) {
       if(pathname.includes('\\')||pathname.includes('\0')||pathname.split('/').some(segment=>segment.startsWith('.')))throw fail(404,'File tidak ditemukan.');
       if(pathname==='/')pathname='/index.html';
       if(pathname==='/admin'||pathname==='/admin/')pathname='/admin/index.html';
-      const publicPath=pathname==='/index.html'||/^\/(?:sections|assets|data)\//.test(pathname)||/^\/admin\/(?:index\.html|app\.js|styles\.css|schema\.js|images\.js|image-policy\.js|documents\.js)$/.test(pathname);
+      const publicPath=pathname==='/index.html'||/^\/(?:sections|assets|data)\//.test(pathname)||/^\/admin\/(?:index\.html|app\.js|photo-order\.js|styles\.css|schema\.js|images\.js|image-policy\.js|documents\.js)$/.test(pathname);
       if(!publicPath)throw fail(404,'File tidak ditemukan.');
       const filename=path.resolve(base,'.'+pathname);
       if(!filename.startsWith(base+path.sep))throw fail(404,'File tidak ditemukan.');

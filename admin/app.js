@@ -6,6 +6,7 @@ import {selectedProjectLimit,projectView} from '../assets/js/project-data.js';
 import {editableDetailRecord,galleryPhotoLimits} from '../assets/js/detail-data.js';
 import {notifyContentSaved} from '../assets/js/content-sync.js';
 import {githubRepository} from '../assets/js/github-repo-data.js';
+import {movePhoto,enablePhotoOrdering} from './photo-order.js';
 
 const $=id=>document.getElementById(id);
 const clone=value=>structuredClone(value);
@@ -256,10 +257,24 @@ function githubPreviewControl(getPhoto,updatePhoto,isActive) {
 function photoFields(field,item,container) {
   const maxPhotos=galleryPhotoLimits[state.name]??3;
   const list=node('div','photo-list');const add=node('button','button small photos-add',field.linkModes?'+ Add item':'+ Add photo');add.type='button';
+  if(field.linkModes) {
+    const hint=node('p','help','Tahan pegangan atau foto lalu geser untuk mengurutkan item dari kiri (1) ke kanan (3). Gunakan tombol panah pada pegangan untuk mengurutkan lewat keyboard.');
+    const announcement=node('p','sr-only');announcement.setAttribute('role','status');
+    container.append(hint,announcement);
+    enablePhotoOrdering(list,{canMove:()=>!state.busy && currentItem()===item,onMove:(from,to)=>{
+      item[field.key]=movePhoto(item[field.key],from,to);paint();touched();
+      announcement.textContent=`Item ${from+1} dipindahkan ke posisi ${to+1}. Klik Save changes untuk menyimpan.`;
+    }});
+  }
   const paint=()=>{
     const photos=Array.isArray(item[field.key])?item[field.key]:[];
     list.replaceChildren(...photos.map((photo,index)=>{
       const entry=node('fieldset','gallery-photo');entry.append(node('legend','',`${field.linkModes?'Item':'Photo'} ${String(index+1).padStart(2,'0')}`));
+      if(field.linkModes) {
+        const handle=node('button','photo-drag-handle','⠿');handle.type='button';
+        handle.setAttribute('aria-label',`Urutkan item ${index+1}, gunakan panah kiri atau kanan`);
+        handle.title='Tahan dan geser untuk mengurutkan';entry.append(handle);
+      }
       const getPhoto=()=>item[field.key][index];
       const getSource=()=>typeof getPhoto()==='string'?getPhoto():getPhoto()?.src||'';
       const setSource=src=>{const previous=getPhoto();item[field.key][index]=typeof previous==='object'?{...previous,src}:src;};
