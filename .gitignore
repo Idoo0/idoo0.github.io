@@ -1,6 +1,4 @@
 admin/.backups/
 data/.*.tmp
 node_modules/
-/PROJECTS.md
-/AGENTS.md
 /tmp/

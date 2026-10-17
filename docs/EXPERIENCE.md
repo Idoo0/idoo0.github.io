@@ -13,7 +13,7 @@ Tambahkan objek baru ke array JSON. Contoh:
   "start": "2026-01",
   "end": "2026-06",
   "location": "Indonesia",
-  "highlighted": true,
+  "roles": ["Software Engineer"],
   "logo": "",
   "images": ["", "", ""],
   "summary": "Deskripsi singkat beserta pencapaian utama.",
@@ -28,13 +28,15 @@ Tambahkan objek baru ke array JSON. Contoh:
 - `type`: teks badge pertama; bebas diubah menjadi Internship, Full-time, Part-time, atau tipe lain.
 - `start` / `end`: format `YYYY-MM`. Isi `end` dengan `null` untuk posisi yang masih berjalan.
 - Durasi dihitung otomatis dengan bulan mulai dan selesai ikut dihitung: Januari–Juni = 6 months.
-- `highlighted: true`: muncul pada tampilan awal **Selected**, tanpa tanda khusus. Filter **Selected / All** di atas timeline menampilkan pengalaman pilihan atau semua pengalaman. Isi Selected mengikuti objek dengan `highlighted: true`.
+- `roles`: kategori untuk filter role, misalnya `["Software Engineer", "AI/ML Engineer"]`. Pilih kategori di admin dari Software Engineer, AI/ML Engineer, Data Scientist, Data Analyst, Data Engineer, Leadership, dan Teaching. **All roles** mencakup seluruh pengalaman; lima item pertama tampil saat halaman dibuka. Klik **Show more** di bawah timeline untuk menambahkan lima item berikutnya. Pergantian role mengembalikan daftar ke lima hasil awal. Field `highlighted` lama tidak dipakai lagi.
 - `logo`: isi dengan path WebP, misalnya `assets/company_icon/uniq.webp`, atau URL gambar. Logo yang sekarang dipakai berukuran seragam 256 × 256 px. Kosongkan untuk placeholder; gambar yang gagal dimuat juga menampilkan placeholder.
 - `images`: 0–3 path gambar untuk kolase di kanan, misalnya `["assets/experience/uniq-1.webp", "assets/experience/uniq-2.webp"]`. Slot foto kosong diabaikan; satu atau dua foto hanya menampilkan satu atau dua bingkai. `[]`, field yang tidak diisi, atau semua slot kosong menyembunyikan kolase beserta ruangnya. Link dengan URL yang valid tetap tampil. Saat kolase turun ke bawah deskripsi, posisinya di tengah. Show details merenggangkan foto ke samping tanpa menambah tinggi kolase; pada layout dengan foto di kanan, foto tetap merenggang ke bawah mengikuti detail.
 - `summary`: deskripsi yang selalu terlihat, termasuk angka pencapaian.
 - `details`: bullet point yang hanya terlihat saat Show details dibuka. Isi `[]` bila tidak diperlukan.
 
-Urutan otomatis berdasarkan tanggal selesai terbaru, baik pada Selected maupun All. Posisi yang masih berjalan tampil pertama; jika tanggal selesai sama, tanggal mulai terbaru tampil lebih dahulu.
+Urutan otomatis berdasarkan tanggal selesai terbaru pada seluruh filter role. Posisi yang masih berjalan tampil pertama; jika tanggal selesai sama, tanggal mulai terbaru tampil lebih dahulu.
+
+Di admin, tahan pegangan **⠿** atau preview foto lalu geser ke posisi tujuan untuk mengurutkan kolase dari kiri (1) ke kanan (3). Pada layar sentuh gunakan pegangan; pada keyboard fokuskan pegangan dan tekan panah kiri/kanan atau atas/bawah. Seluruh data item ikut berpindah, termasuk mode, URL, dan label. Klik **Save changes** untuk menyimpan urutan.
 
 Klik foto pada kolase untuk membuka preview besar tanpa crop. Tutup dengan ×, Escape, atau klik di luar modal. Slot kosong tidak bisa diklik.
 
