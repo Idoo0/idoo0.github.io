@@ -30,15 +30,13 @@
     .header { position:absolute; top:33px; left:4.4%; right:4.4%; display:flex; align-items:center; justify-content:space-between; gap:24px; z-index:5; }
     .brand { display:flex; align-items:center; gap:12px; font-size:12px; font-weight:700; letter-spacing:1.6px; }
     .brand-logo { display:block; width:34px; height:34px; flex-shrink:0; }
-    .header-right { display:flex; align-items:center; gap:27px; }
-    .sound { display:flex; align-items:center; justify-content:center; gap:8px; background:#fff8e452; border:1px solid #35624635; border-radius:30px; padding:10px 14px; cursor:pointer; font-size:10px; letter-spacing:.8px; }
+    .header-right { display:flex; align-items:center; gap:8px; }
+    .sound:focus-visible { outline:2px solid #356246; outline-offset:3px; }
+    .sound { display:flex; align-items:center; justify-content:center; flex-shrink:0; width:44px; height:44px; background:#fff8e452; border:1px solid #35624635; border-radius:6px; padding:0; cursor:pointer; }
     .sound:hover { background:#fff8e4ad; }
-    .sound-bars { display:flex; gap:2px; height:12px; align-items:center; }
-    .sound-bars i { width:2px; background:currentColor; height:3px; }
-    .sound-bars i:nth-child(2), .sound-bars i:nth-child(4) { height:7px; }
-    .sound-bars i:nth-child(3) { height:12px; }
-    .sound[aria-pressed="true"] i { animation:sound-bar .7s ease-in-out infinite alternate; }
-    .sound i:nth-child(2n) { animation-delay:-.4s; }
+    .sound-icon { width:20px; height:20px; }
+    .sound-off-line { display:none; }
+    .sound[aria-pressed="false"] .sound-off-line { display:block; }
     .scene { position:absolute; width:min(1230px,88%); left:50%; top:46.5%; transform:translate(-50%,-50%); display:grid; grid-template-columns:34% 66%; align-items:end; }
     .tree-area { position:relative; margin:0 -10px -76px -27px; perspective:950px; perspective-origin:48.84% 73.91%; }
     .tree-interactive { position:absolute; inset:0; display:block; width:100%; height:100%; padding:0; border:0; background:none; border-radius:20px; cursor:pointer; touch-action:pan-y; -webkit-user-select:none; user-select:none; pointer-events:none; transform-style:preserve-3d; transform-origin:48.84% 73.91%; transform:translateZ(var(--tree-depth,0px)) rotateX(calc(var(--tree-rx,0deg) + var(--press-tilt,0deg))) rotateY(var(--tree-ry,0deg)) scale(var(--tree-scale,1)); transition:transform .65s cubic-bezier(.22,1.25,.35,1); }
@@ -566,7 +564,6 @@
     @keyframes copy-enter { 0% { opacity:0; transform:translateY(9px); } 100% { opacity:1; transform:translateY(0); } }
     @keyframes grass-sway { from { transform:rotate(-5deg); } to { transform:rotate(7deg); } }
     @keyframes falling-leaf { 0% { opacity:0; transform:translate(0,0) rotate(0); } 8%,70% { opacity:.8; } 100% { opacity:0; transform:translate(200px,210px) rotate(380deg); } }
-    @keyframes sound-bar { to { transform:scaleY(.4); } }
     @keyframes badge-enter { from { opacity:0; transform:translateY(7px) rotate(0deg) scale(.8); } to { opacity:1; transform:translateY(0) rotate(var(--badge-angle)) scale(1); } }
     @keyframes archive-handle { 0%,35%,70%,100% { transform:translateX(0); } 45%,60% { transform:translateX(-2px); } }
     @keyframes scroll-nudge { 0%,100% { transform:translateY(0); } 50% { transform:translateY(4px); } }
@@ -575,7 +572,7 @@
     @media (max-width:760px) {
       .world { min-height:900px; height:100svh; max-height:1100px; }
       .landscape { inset:-10% -2% -2%; } .landscape img { object-position:46% 50%; }
-      .header { top:22px; left:6%; right:6%; } .brand { font-size:10px; gap:8px; letter-spacing:1px; } .brand-logo { width:28px; height:28px; }  .sound { padding:9px 11px; font-size:8px; }
+      .header { top:22px; left:6%; right:6%; } .brand { font-size:10px; gap:8px; letter-spacing:1px; } .brand-logo { width:28px; height:28px; } .sound { width:40px; height:40px; }
       .scene { top:116px; width:88%; transform:translateX(-50%); display:block; }
       .intro { padding:0; }
       h1 { font-size:clamp(51px,11.8vw,86px); letter-spacing:-3.5px; margin-left:-3px; }

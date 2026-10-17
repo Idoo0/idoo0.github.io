@@ -53,7 +53,7 @@ export const ready = (async () => {
       });
       document.getElementById('role-specialty').textContent = roles[0].title;
       renderStack(roles[0]);
-      lever.setAttribute('aria-label',`Tarik tuas: ganti ke ${roles[1].title} Engineer`);
+      lever.setAttribute('aria-label',`Pull the lever: switch to ${roles[1].title} Engineer`);
       let index = 0, busy = false, moving = !reducedMotion.matches;
       let audio = null, master = null, ambience = null, soundOn = true;
       let dragging = false, pointerId = null, startY = 0, dragDistance = 0, suppressClick = false;
@@ -84,7 +84,9 @@ export const ready = (async () => {
 
       function syncSoundUI() {
         soundButton.setAttribute('aria-pressed', String(soundOn));
-        soundButton.setAttribute('aria-label', soundOn ? 'Matikan suara alam dan tuas' : 'Aktifkan suara alam dan tuas');
+        const description = soundOn ? 'Turn off nature and lever sounds' : 'Turn on nature and lever sounds';
+        soundButton.setAttribute('aria-label', description);
+        soundButton.title = description;
         document.getElementById('sound-label').textContent = soundOn ? 'SOUND ON' : 'SOUND OFF';
         soundButton.dataset.audioState = audio ? audio.state : 'pending';
       }
@@ -161,7 +163,7 @@ export const ready = (async () => {
         document.getElementById('role-specialty').textContent = role.title;
         renderStack(role);
         document.getElementById('role-announcement').textContent = `${role.title} Engineer. ${role.stack.map(item => item[1]).join(', ')}.`;
-        lever.setAttribute('aria-label', `Tarik tuas: ganti ke ${roles[(index + 1) % roles.length].title} Engineer`);
+        lever.setAttribute('aria-label', `Pull the lever: switch to ${roles[(index + 1) % roles.length].title} Engineer`);
         board.classList.add('changing');
         playLeverSound(role);
         if (moving && !reducedMotion.matches) {

@@ -24,7 +24,12 @@
 
     <header class="header">
       <div class="brand"><img class="brand-logo" src="assets/images/ridho-aditya-logo.svg" width="34" height="34" alt="" aria-hidden="true"><span class="brand-label">RIDHO ADITYA</span></div>
-      <div class="header-right"><button class="sound" id="sound-toggle" type="button" aria-pressed="true" aria-label="Matikan suara alam dan tuas" data-audio-state="pending"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span id="sound-label">SOUND ON</span></button></div>
+      <div class="header-right">
+        <button class="sound" id="sound-toggle" type="button" aria-pressed="true" aria-label="Turn off nature and lever sounds" data-audio-state="pending">
+          <svg class="sound-icon" viewBox="0 0 32 28" fill="none" aria-hidden="true"><path d="M4 10h5l6-5v18l-6-5H4z" fill="currentColor" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M18 10c2 2 2 6 0 8m3-11c4 4 4 10 0 14m3-17c6 6 6 14 0 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path class="sound-off-line" d="M3 25 26 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr-only" id="sound-label">SOUND ON</span>
+        </button>
+      </div>
     </header>
 
     <section class="scene" aria-labelledby="name">
@@ -44,8 +49,8 @@
           <g stroke="#3f773e" stroke-width="3" fill="none" stroke-linecap="round"><path d="m172 425-8-16m8 16-1-21m1 21 9-11m48 10 8-19m-8 19-3-11m64 9 7-13m-7 13-3-10"/></g>
           <path d="M114 414h8v8h-8z" fill="#f5e8a1"/><path d="M117 411h3v14h-3z" fill="#fff8d8"/>
         </svg>
-        <button class="tree-interactive" id="tree-button" type="button" aria-label="Sentuh atau tekan daun pohon untuk menggerakkannya dalam 3D">
-        <svg class="tree tree-crown" viewBox="0 0 430 460" role="img" aria-label="Daun pixel hijau dengan foto Ridho Aditya di tengahnya">
+        <button class="tree-interactive" id="tree-button" type="button" aria-label="Tap or press the tree leaves to move them in 3D">
+        <svg class="tree tree-crown" viewBox="0 0 430 460" role="img" aria-label="Green pixel leaves with a photo of Ridho Aditya in the center">
           <g class="canopy">
             <path transform="translate(10 9)" d="M159 45h37V30h64v16h36v20h34v28h29v37h24v60h-18v44h-19v48h-31v27h-40v27h-50v-13h-48v13h-47v-20h-33v-27H69v-34H47v-44H34v-47h17v-44h25V88h38V64h45z" fill="#315332" stroke="#28462c" stroke-width="3"/>
             <path d="M159 45h37V30h64v16h36v20h34v28h29v37h24v60h-18v44h-19v48h-31v27h-40v27h-50v-13h-48v13h-47v-20h-33v-27H69v-34H47v-44H34v-47h17v-44h25V88h38V64h45z" fill="#375d38" stroke="#2e5231" stroke-width="3" stroke-linejoin="miter"/>
@@ -117,9 +122,9 @@
               </div>
             </div>
           </div>
-          <div class="lever-assembly"><div class="lever-mount" aria-hidden="true"></div><div class="lever-slot" aria-hidden="true"></div><button class="lever-button" id="lever" type="button" aria-label="Tarik tuas: ganti ke AI Engineer" aria-describedby="lever-help"><span class="lever-arm" aria-hidden="true"></span><span class="lever-cap" aria-hidden="true"></span></button></div>
+          <div class="lever-assembly"><div class="lever-mount" aria-hidden="true"></div><div class="lever-slot" aria-hidden="true"></div><button class="lever-button" id="lever" type="button" aria-label="Pull the lever: switch to AI Engineer" aria-describedby="lever-help"><span class="lever-arm" aria-hidden="true"></span><span class="lever-cap" aria-hidden="true"></span></button></div>
           <div class="lever-tip" aria-hidden="true"><svg viewBox="0 0 40 64" fill="none"><path d="M9 3c23 9 22 32 8 54m0 0-1-12m1 12 11-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>pull for a little plot</div>
-          <p id="lever-help" class="sr-only">Klik, tarik tuas ke bawah, atau tekan Enter maupun Spasi untuk mengganti profesi.</p>
+          <p id="lever-help" class="sr-only">Click, drag the lever down, or press Enter or Space to change professions.</p>
         </div>
       </div>
       <p id="role-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true">Software Engineer</p>
