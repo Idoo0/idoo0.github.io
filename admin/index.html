@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main class="access-message" id="access-message" role="alert"><h1>Access unauthorized</h1></main>
+  <div id="admin-studio" hidden>
   <aside class="sidebar">
     <a class="admin-brand" href="../" target="_blank" rel="noopener"><img src="../assets/images/ridho-aditya-logo.svg" width="26" height="26" alt="" aria-hidden="true">RIDHO ADITYA<span>LOCAL ADMIN</span></a>
     <p class="nav-label">CONTENT</p>
@@ -31,6 +33,7 @@
     </section>
   </main>
   <dialog class="confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-copy"><h2 id="confirm-title"></h2><p id="confirm-copy"></p><div><button type="button" class="button subtle" id="confirm-cancel" autofocus>Cancel</button><button type="button" class="button primary" id="confirm-ok">Continue</button></div></dialog>
-  <script type="module" src="app.js"></script>
+  </div>
+  <script type="module" src="access.js"></script>
 </body>
 </html>

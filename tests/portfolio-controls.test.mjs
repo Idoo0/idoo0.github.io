@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {experienceRoleCategories,experienceView} from '../assets/js/experience-data.js';
 import {collections,validateCollection} from '../admin/schema.js';
 import {movePhoto} from '../admin/photo-order.js';
+import {isLocalAdminLocation,isLocalAdminResponse} from '../admin/access.js';
 
 test('Role filters include every experience by default and use explicit categories before legacy titles',()=>{
   const items=[
@@ -28,4 +29,11 @@ test('Photo ordering moves the entire item with link, preview, label, and extra 
   assert.deepEqual(movePhoto(reordered,2,0),photos);
   assert.deepEqual(photos,before);
   for(const [from,to] of [[-1,0],[0,3],[0,0],[0.5,1]])assert.equal(movePhoto(photos,from,to),photos);
+});
+
+test('Admin only opens on loopback HTTP origins with a valid local API response',()=>{
+  for(const hostname of ['127.0.0.1','localhost','[::1]'])assert.equal(isLocalAdminLocation({protocol:'http:',hostname}),true);
+  for(const location of [{protocol:'file:',hostname:''},{protocol:'https:',hostname:'example.github.io'},{protocol:'http:',hostname:'localhost.evil.example'},{protocol:'http:',hostname:'192.168.1.5'}])assert.equal(isLocalAdminLocation(location),false);
+  assert.equal(isLocalAdminResponse({data:[],revision:'a'.repeat(64)}),true);
+  for(const response of [{},{data:[]},{data:{},revision:'a'.repeat(64)},{data:[],revision:'invalid'}])assert.equal(isLocalAdminResponse(response),false);
 });
