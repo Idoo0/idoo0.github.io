@@ -212,8 +212,8 @@
     .experience-intro { margin:15px 0 0; font-size:13px; line-height:1.7; color:#61705f; }
     .experience-signpost { width:100px; height:110px; flex-shrink:0; color:#70865f; transform:rotate(5deg); }
     .experience-toolbar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px 20px; margin:0 0 25px; padding-bottom:18px; border-bottom:1px solid #aebca680; }
-    .experience-filters { display:inline-flex; align-items:center; gap:4px; padding:5px; border:1px solid #a4b29c; border-radius:12px; background:#eaf0e480; }
-    .experience-filter { display:inline-flex; align-items:center; justify-content:center; min-width:82px; padding:11px 17px; border:0; border-radius:8px; background:transparent; color:#52654c; font-size:12px; cursor:pointer; transition:background .2s,color .2s,box-shadow .2s; }
+    .experience-filters { display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+    .experience-filter { display:inline-flex; align-items:center; justify-content:center; }
     .experience-filter:hover { background:#dbe5d0; }
     .experience-filter[aria-pressed="true"] { background:#415940; color:#f4f4e8; box-shadow:0 2px 0 #293b2c; }
     .experience-filter:focus-visible { outline:2px solid #aa8053; outline-offset:3px; }

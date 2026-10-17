@@ -6,6 +6,7 @@ import {createPhotoViewer} from './photo-viewer.js';
 import {setPhotoSource} from './photo-source.js';
 import {experiencePhotos} from './experience-photo-data.js';
 import {onContentSaved} from './content-sync.js';
+import {experienceRoles,experienceRoleCategories,experienceView} from './experience-data.js';
 
 export const ready = (async () => {
       'use strict';
@@ -302,11 +303,14 @@ export const ready = (async () => {
 
       // Edit experience.json to update roles, logo paths, and 1–3 collage images.
       const experienceList = document.getElementById('experience-list');
-      const selectedExperienceButton = document.getElementById('experience-selected');
-      const allExperienceButton = document.getElementById('experience-all');
+      const experienceFilters = document.getElementById('experience-filters');
       const experienceStatus = document.getElementById('experience-status');
+      const experiencePagination = document.getElementById('experience-pagination');
+      const experienceMoreButton = document.getElementById('experience-load-more');
+      const experiencesPerPage = 5;
       let experienceJourney = [];
-      let showAllExperiences = false;
+      let activeExperienceRole = '';
+      let visibleExperienceCount = 0;
       const escapeHTML = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
       const logoPlaceholder = '<span class="experience-logo-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="9" r="1.5" stroke="currentColor" stroke-width="1.3"/><path d="m4 18 5-5 4 3 3-4 4 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>LOGO</span></span>';
       const workTypeIcon = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5.5 5V3h5v2M2.5 5.5h11v8h-11zM2.5 9h11M6.5 8h3v2h-3z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>';
@@ -390,14 +394,38 @@ export const ready = (async () => {
         return collage;
       }
 
-      function renderExperiences(showAll) {
-        reveals.forget(experienceList);
-        experienceList.querySelectorAll('.experience-details ul').forEach(list => collageObserver?.unobserve(list));
-        experienceList.querySelectorAll('.experience-collage').forEach(collage => clearTimeout(collageSpacing.get(collage)?.timer));
-        showAllExperiences = showAll;
-        const visible = showAll ? experienceJourney : experienceJourney.filter(item => item.highlighted);
+      function renderExperienceFilters() {
+        const roles = experienceRoles.filter(role => experienceJourney.some(item => experienceRoleCategories(item).includes(role)));
+        if (!roles.includes(activeExperienceRole)) activeExperienceRole = '';
+        experienceFilters.replaceChildren(...['',...roles].map(role => {
+          const button = document.createElement('button');
+          button.type = 'button';button.className = 'project-filter experience-filter';button.dataset.role = role;
+          button.textContent = role || 'All roles';
+          button.setAttribute('aria-controls','experience-list');
+          button.addEventListener('click',() => {
+            if (activeExperienceRole === role) return;
+            activeExperienceRole = role;renderExperiences();
+          });
+          return button;
+        }));
+      }
+
+      function renderExperiences(append = false) {
+        const experiences = experienceView(experienceJourney,activeExperienceRole);
+        if (append && visibleExperienceCount >= experiences.length) return;
+        if (!append) {
+          reveals.forget(experienceList);
+          experienceList.querySelectorAll('.experience-details ul').forEach(list => collageObserver?.unobserve(list));
+          experienceList.querySelectorAll('.experience-collage').forEach(collage => clearTimeout(collageSpacing.get(collage)?.timer));
+          experienceList.replaceChildren();
+          visibleExperienceCount = 0;
+        }
+        const start = visibleExperienceCount;
+        const visible = experiences.slice(start,start + experiencesPerPage);
+        visibleExperienceCount += visible.length;
         const fragment = document.createDocumentFragment();
-        visible.forEach((item, position) => {
+        visible.forEach((item, index) => {
+          const position = start + index;
           const entry = document.createElement('li');
           entry.className = 'experience-entry';
           entry.dataset.experienceId = item.id;
@@ -459,13 +487,22 @@ export const ready = (async () => {
           message.textContent = 'No experiences to show yet.';
           fragment.appendChild(message);
         }
-        experienceList.replaceChildren(fragment);
-        reveals.observe(experienceList.querySelectorAll('.experience-date,.experience-track,.experience-copy,.experience-collage'),45);
-        experienceList.setAttribute('aria-label', showAll ? 'All experiences' : 'My experience');
-        selectedExperienceButton.setAttribute('aria-pressed', String(!showAll));
-        allExperienceButton.setAttribute('aria-pressed', String(showAll));
-        experienceStatus.textContent = `Showing ${visible.length} of ${experienceJourney.length} experiences.`;
+        const addedEntries = [...fragment.children];
+        experienceList.appendChild(fragment);
+        reveals.observe(addedEntries.flatMap(entry => [...entry.querySelectorAll('.experience-date,.experience-track,.experience-copy,.experience-collage')]),45);
+        experienceList.setAttribute('aria-label', activeExperienceRole || 'All experiences');
+        experienceFilters.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.role === activeExperienceRole)));
+        const restoreFocus = append && document.activeElement === experienceMoreButton;
+        experiencePagination.hidden = visibleExperienceCount >= experiences.length;
+        if (!experiencePagination.hidden) reveals.observe([experiencePagination]);
+        experienceStatus.textContent = `Showing ${visibleExperienceCount} of ${experiences.length} experiences.`;
+        // Preserve keyboard focus when the last batch removes Show more.
+        if (restoreFocus && experiencePagination.hidden) {
+          const heading = addedEntries[0]?.querySelector('.experience-role');
+          if (heading) {heading.tabIndex = -1;heading.focus({preventScroll:true});}
+        }
       }
+      experienceMoreButton.addEventListener('click',() => renderExperiences(true));
 
       async function loadExperiences() {
         experienceList.setAttribute('aria-busy', 'true');
@@ -485,7 +522,7 @@ export const ready = (async () => {
               id: String(item.id || `experience-${sourceIndex}`),
               type: typeof item.type === 'string' && item.type.trim() ? item.type : 'Not specified',
               end: item.end ?? null,
-              highlighted: item.highlighted === true,
+              roles: experienceRoleCategories(item),
               logo: typeof item.logo === 'string' ? item.logo : '',
               images:experiencePhotos(item.images),
               summary: typeof item.summary === 'string' ? item.summary : '',
@@ -494,19 +531,17 @@ export const ready = (async () => {
               sourceIndex
             };
           }).sort((a, b) => (b.end ?? '9999-12').localeCompare(a.end ?? '9999-12') || b.start.localeCompare(a.start) || a.sourceIndex - b.sourceIndex);
-          renderExperiences(showAllExperiences);
-          selectedExperienceButton.disabled = false;
-          allExperienceButton.disabled = false;
+          renderExperienceFilters();
+          renderExperiences();
         } catch (error) {
           console.error('Could not load experience.json:', error);
+          experiencePagination.hidden = true;
           experienceList.innerHTML = '<li class="experience-load-message">Experiences could not be loaded. Please refresh the page.</li>';
           experienceStatus.textContent = 'Experiences could not be loaded.';
         } finally {
           experienceList.setAttribute('aria-busy', 'false');
         }
       }
-      selectedExperienceButton.addEventListener('click', () => { if (showAllExperiences) renderExperiences(false); });
-      allExperienceButton.addEventListener('click', () => { if (!showAllExperiences) renderExperiences(true); });
       pendingData.push(loadExperiences());
 
       const projectsGrid = document.getElementById('projects-grid');

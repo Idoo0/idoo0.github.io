@@ -87,7 +87,7 @@ function updateRecordLabels() {
       button.setAttribute('aria-label',`Edit ${record.title||record.id}`);
       const title=button.querySelector('strong');title.textContent=record.title||'Untitled';
       const detail=button.querySelector('small');detail.replaceChildren();
-      if(record.highlighted || record.selected)detail.append(node('i','record-mark'));
+      if((state.name!=='experience' && record.highlighted) || record.selected)detail.append(node('i','record-mark'));
       detail.append(document.createTextNode(record.company||record.issuer||record.category||record.id||''));
     });
     if(state.name==='projects') {

@@ -9,13 +9,13 @@
         <svg class="experience-signpost" viewBox="0 0 100 110" fill="none" aria-hidden="true"><ellipse cx="50" cy="101" rx="27" ry="4" fill="currentColor" opacity=".12"/><path d="M49 22h7v76h-7z" fill="#a78c61" stroke="#667951" stroke-width="1.5"/><path d="M17 19h58l13 12-13 12H17z" fill="#e5e9d2" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M85 50H27L14 62l13 12h58z" fill="#d2ddbc" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M27 31h32m4 0h4M40 62h30M36 96l-5-8m5 8 2-13m27 14 6-8m-6 8-1-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="m79 10 2-5m7 12 5-1M12 79l-4 3" stroke="#a79b66" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
       <div class="experience-toolbar">
-        <div class="experience-filters" role="group" aria-label="Experience view">
-          <button class="experience-filter" id="experience-selected" type="button" disabled aria-pressed="true" aria-controls="experience-list">Selected</button>
-          <button class="experience-filter" id="experience-all" type="button" disabled aria-pressed="false" aria-controls="experience-list">All</button>
-        </div>
+        <div class="experience-filters" id="experience-filters" role="group" aria-label="Filter experiences by role"></div>
         <a class="experience-profile" href="https://www.linkedin.com/in/ridhoadityaputra/" target="_blank" rel="noopener noreferrer">View on LinkedIn<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <ol class="experience-list" id="experience-list" role="list" aria-label="My experience" aria-busy="true"><li class="experience-load-message">Loading experiences…</li></ol>
+      <div class="projects-pagination experience-pagination" id="experience-pagination" hidden>
+        <button class="projects-more experience-more" id="experience-load-more" type="button" aria-controls="experience-list">Show more<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 8 5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
       <p class="sr-only" id="experience-status" aria-live="polite" aria-atomic="true"></p>
       <noscript><p>See my experience on <a href="https://www.linkedin.com/in/ridhoadityaputra/">LinkedIn</a>.</p></noscript>
     </div>

@@ -1,6 +1,7 @@
 import {isDetailLinkUrl,detailContentFields,galleryPhotoLimits} from '../assets/js/detail-data.js';
 import {projectCategories,projectStatuses,selectedProjectLimit} from '../assets/js/project-data.js';
 import {githubRepository} from '../assets/js/github-repo-data.js';
+import {experienceRoles} from '../assets/js/experience-data.js';
 
 const field = (key,label,type='text',help='') => ({key,label,type,help});
 export const collections = {
@@ -14,12 +15,13 @@ export const collections = {
     field('highlights','Teks yang dicetak tebal','list','Satu frasa per baris.'),field('school','Universitas'),field('major','Jurusan'),
     field('gpa','GPA'),field('gpaScale','Skala GPA'),field('logo','Logo universitas','image')
   ]},
-  experience:{label:'Experience',kind:'array',description:'Selected mengikuti highlighted. Timeline diurutkan berdasarkan tanggal selesai.',fields:[
+  experience:{label:'Experience',kind:'array',description:'Semua pengalaman tampil di timeline, diurutkan berdasarkan tanggal selesai. Pilih kategori role untuk filter di portfolio.',fields:[
     field('id','ID unik'),field('title','Posisi'),field('company','Perusahaan / organisasi'),field('type','Tipe kerja'),
+    {...field('roles','Kategori role','choices','Pilih satu atau beberapa role. Posisi tetap ditulis bebas di kolom Posisi.'),options:experienceRoles},
     field('start','Bulan mulai','month'),field('end','Bulan selesai','endMonth','Kosongkan jika masih berjalan.'),field('location','Lokasi'),
-    field('highlighted','Tampilkan di Selected','boolean'),field('logo','Logo','image'),field('summary','Deskripsi singkat','textarea'),
+    field('logo','Logo','image'),field('summary','Deskripsi singkat','textarea'),
     field('details','Show details','list','Satu poin per baris.'),{...field('images','Kolase foto & link','photos','Maksimal tiga item. Foto membuka preview, Link memakai thumbnail upload, dan GitHub membuat thumbnail repo otomatis dari URL.'),linkModes:true}
-  ],create:()=>({id:'',title:'New experience',company:'',type:'Internship',start:new Date().toISOString().slice(0,7),end:null,location:'',highlighted:false,logo:'',summary:'',details:[],images:['']})},
+  ],create:()=>({id:'',title:'New experience',company:'',roles:[],type:'Internship',start:new Date().toISOString().slice(0,7),end:null,location:'',logo:'',summary:'',details:[],images:['']})},
   projects:{label:'Projects',kind:'array',description:'Pilih maksimal 6 project untuk Selected, diurutkan dari bulan selesai terbaru. Pilih kategori untuk filter, lalu tulis jenis produknya sendiri.',fields:[
     field('id','ID unik'),field('title','Nama proyek'),
     {...field('categories','Kategori','choices','Pilih satu atau beberapa kategori untuk filter project di web.'),options:projectCategories},

@@ -7,7 +7,6 @@
     "start": "2025-05",
     "end": "2025-12",
     "location": "Indonesia",
-    "highlighted": true,
     "logo": "assets/company_icon/kemendikti.webp",
     "summary": "Secured a research grant to develop NEUROKIT, a multimodal neurotherapeutic prototype that improved student attention by 11.64% and earned a Bronze Medal at PIMNAS 38.",
     "details": [
@@ -28,6 +27,9 @@
         "label": "Prototype Showcase"
       },
       "assets/experience/pkm-images-cb066b9e-b31d-49cf-8a42-d0cad7a25178.webp"
+    ],
+    "roles": [
+      "Software Engineer"
     ]
   },
   {
@@ -38,7 +40,6 @@
     "start": "2025-10",
     "end": "2025-11",
     "location": "Indonesia",
-    "highlighted": false,
     "logo": "assets/company_icon/homecredit.webp",
     "summary": "Developed a credit-risk classifier with 91% accuracy using 307K+ applications and 7M+ records across six supporting tables.",
     "details": [
@@ -60,6 +61,9 @@
         "url": "https://github.com/Idoo0/HCI---Final-Task",
         "label": "Project Repo"
       }
+    ],
+    "roles": [
+      "Data Scientist"
     ]
   },
   {
@@ -70,7 +74,6 @@
     "start": "2025-07",
     "end": "2025-08",
     "location": "Derawan Island, East Kalimantan",
-    "highlighted": true,
     "logo": "assets/company_icon/bca.webp",
     "summary": "Delivered 20+ community activities and technology-led projects during a 28-day service program on Derawan Island, with a 2.64 SROI.",
     "details": [
@@ -91,6 +94,9 @@
         "src": "assets/experience/genera-z-images-e5e1f832-1ef1-4d28-95a8-fe1e8d1dec4f.webp",
         "alt": "We cleaned the sea with local communities"
       }
+    ],
+    "roles": [
+      "Software Engineer"
     ]
   },
   {
@@ -101,7 +107,6 @@
     "start": "2024-09",
     "end": "2024-12",
     "location": "Indonesia",
-    "highlighted": true,
     "logo": "assets/company_icon/bangkit.webp",
     "summary": "Completed around 900 hours of machine learning training and built Yuk Tanam, a plant-disease detection capstone with 77% model accuracy, in a team of 6+.",
     "details": [
@@ -125,6 +130,9 @@
         "src": "assets/experience/bangkit-images-2cd0ce24-429e-49a1-b61e-3bada7c948bb.webp",
         "alt": ""
       }
+    ],
+    "roles": [
+      "AI/ML Engineer"
     ]
   },
   {
@@ -135,7 +143,6 @@
     "start": "2024-09",
     "end": "2024-12",
     "location": "Yogyakarta, Indonesia",
-    "highlighted": true,
     "logo": "assets/company_icon/uniq.webp",
     "summary": "Built a hybrid recommendation system using 200K+ transaction records and an agentic AI chatbot with Qdrant for semantic retrieval.",
     "details": [
@@ -147,6 +154,9 @@
       "assets/experience/uniq-images-c330c8fe-a2bb-4071-980d-4bb445f81010.webp",
       "assets/experience/uniq-images-7435ed31-9e8b-4d69-b77f-1906066e8222.webp",
       "assets/experience/uniq-images-41f4dac5-d82a-4e22-a10c-51a1207f3183.webp"
+    ],
+    "roles": [
+      "AI/ML Engineer"
     ]
   },
   {
@@ -157,7 +167,6 @@
     "start": "2024-08",
     "end": "2024-12",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/genia.webp",
     "summary": "",
     "details": [],
@@ -165,6 +174,9 @@
       "",
       "",
       ""
+    ],
+    "roles": [
+      "Leadership"
     ]
   },
   {
@@ -175,7 +187,6 @@
     "start": "2024-04",
     "end": "2024-10",
     "location": "Surabaya, East Java",
-    "highlighted": true,
     "logo": "assets/company_icon/berbinar.webp",
     "summary": "Built 6+ Laravel backend features and five psychological-test systems, while improving legacy database models.",
     "details": [
@@ -187,6 +198,9 @@
       "assets/experience/berbinar-images-aa0ac1f3-4339-44c9-9e12-fe0b959cb7e5.webp",
       "assets/experience/berbinar-images-0da9b5b0-c069-47de-9942-082cc755ec0b.webp",
       "assets/experience/berbinar-images-5aa9aadd-0ca6-4fa8-9591-ed12d080147a.webp"
+    ],
+    "roles": [
+      "Software Engineer"
     ]
   },
   {
@@ -197,7 +211,6 @@
     "start": "2024-07",
     "end": "2024-09",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/unity.webp",
     "summary": "Led a team of 12+ to build the UNITY chatbot, achieving 90% answer accuracy in manual QA, and a division recommendation system.",
     "details": [
@@ -209,6 +222,10 @@
       "assets/experience/unity-lead-images-d021bb44-8c64-4bb4-ae49-9dce5bd582de.webp",
       "assets/experience/unity-lead-images-e8041b3e-10dd-4832-bc7c-87ba8ac1edc7.webp",
       "assets/experience/unity-lead-images-f36fefe5-d0bc-44da-ae54-516cc2470ca0.webp"
+    ],
+    "roles": [
+      "AI/ML Engineer",
+      "Leadership"
     ]
   },
   {
@@ -219,7 +236,6 @@
     "start": "2024-01",
     "end": "2024-09",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/unity.webp",
     "summary": "Mentored 30+ cohort members through machine learning materials and practical sessions.",
     "details": [
@@ -236,6 +252,10 @@
       },
       "assets/experience/unity-trainer-images-522f5c77-38cf-4e17-9b58-f2dc9c061137.webp",
       ""
+    ],
+    "roles": [
+      "AI/ML Engineer",
+      "Teaching"
     ]
   },
   {
@@ -246,7 +266,6 @@
     "start": "2023-04",
     "end": "2023-12",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/unity.webp",
     "summary": "Contributed to two mini-projects and a final kNN-VC voice-conversion project featuring three voices through the AI and mobile development cohort.",
     "details": [
@@ -269,6 +288,10 @@
         "src": "assets/experience/unity-cohort-images-6f29d851-e1d8-4d0c-8368-055aa0fb9626.webp",
         "alt": "Artificial Inteligence Team Member"
       }
+    ],
+    "roles": [
+      "Software Engineer",
+      "AI/ML Engineer"
     ]
   },
   {
@@ -279,7 +302,6 @@
     "start": "2024-02",
     "end": "2024-04",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/hme.webp",
     "summary": "Designed database ERDs and built Express.js and TypeScript CRUD APIs in collaboration with 10+ team members.",
     "details": [
@@ -291,6 +313,9 @@
       "",
       "",
       ""
+    ],
+    "roles": [
+      "Software Engineer"
     ]
   },
   {
@@ -301,7 +326,6 @@
     "start": "2024-01",
     "end": "2024-04",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/kosan.webp",
     "summary": "Designed database architecture and Express.js CRUD services, collaborating with 5+ team members on backend development.",
     "details": [
@@ -318,6 +342,9 @@
         "label": ""
       },
       ""
+    ],
+    "roles": [
+      "Software Engineer"
     ]
   },
   {
@@ -328,7 +355,6 @@
     "start": "2023-07",
     "end": "2023-12",
     "location": "Manado, North Sulawesi",
-    "highlighted": false,
     "logo": "assets/company_icon/unsrat.webp",
     "summary": "Taught C++ fundamentals in Algorithms and Programming practicum sessions, supported around 30 students, and assessed student projects.",
     "details": [
@@ -340,6 +366,9 @@
       "assets/experience/teaching-assistant-images-b605fee1-63af-4717-929e-3dc8dbf41a04.webp",
       "",
       ""
+    ],
+    "roles": [
+      "Teaching"
     ]
   }
 ]
