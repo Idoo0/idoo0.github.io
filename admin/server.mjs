@@ -37,6 +37,7 @@ export function createPortfolioServer({root,githubPreview=fetchGithubPreview}) {
     try{return await task;}finally{if(locks.get(name)===task)locks.delete(name);}
   };
   return http.createServer(async(req,res)=>{
+    let pageRequest=false;
     try {
       const address=new URL(`http://${req.headers.host||'invalid'}`);
       if(!['127.0.0.1','localhost','[::1]'].includes(address.hostname))throw fail(403,'Server ini hanya untuk localhost.');
@@ -103,19 +104,28 @@ export function createPortfolioServer({root,githubPreview=fetchGithubPreview}) {
         return json(res,200,await save(name,payload));
       }
       if(!['GET','HEAD'].includes(req.method))throw fail(405,'Metode tidak didukung.');
+      pageRequest=Boolean(req.headers.accept?.includes('text/html'));
       if(url.pathname==='/admin') {res.writeHead(308,{Location:'/admin/'+url.search});res.end();return;}
       let pathname;try{pathname=decodeURIComponent(url.pathname);}catch{throw fail(400,'Path tidak valid.');}
       if(pathname.includes('\\')||pathname.includes('\0')||pathname.split('/').some(segment=>segment.startsWith('.')))throw fail(404,'File tidak ditemukan.');
       if(pathname==='/')pathname='/index.html';
       if(pathname==='/admin'||pathname==='/admin/')pathname='/admin/index.html';
       const publicPath=pathname==='/index.html'||/^\/(?:sections|assets|data)\//.test(pathname)||/^\/admin\/(?:index\.html|app\.js|access\.js|photo-order\.js|styles\.css|schema\.js|images\.js|image-policy\.js|documents\.js)$/.test(pathname);
-      if(!publicPath)throw fail(404,'File tidak ditemukan.');
+      if(!publicPath&&pathname!=='/404.html')throw fail(404,'File tidak ditemukan.');
       const filename=path.resolve(base,'.'+pathname);
       if(!filename.startsWith(base+path.sep))throw fail(404,'File tidak ditemukan.');
       const contents=await fs.readFile(filename);
       res.writeHead(200,{'Content-Type':mime[path.extname(filename).toLowerCase()]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
       res.end(req.method==='HEAD'?undefined:contents);
     } catch(error) {
+      if(!res.headersSent&&pageRequest&&(error.status===404||error.code==='ENOENT'||error.code==='EISDIR')) {
+        const page=await fs.readFile(path.join(base,'404.html')).catch(()=>null);
+        if(page) {
+          res.writeHead(404,{'Content-Type':mime['.html'],'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
+          res.end(req.method==='HEAD'?undefined:page);
+          return;
+        }
+      }
       if(!res.headersSent)json(res,error.status||(error.code==='ENOENT'||error.code==='EISDIR'?404:500),{error:error.status?error.message:error.code==='ENOENT'||error.code==='EISDIR'?'File tidak ditemukan.':'Server tidak dapat memproses request.',details:error.details||[]});
       else res.end();
     }

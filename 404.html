@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e0ead3">
+  <meta name="robots" content="noindex">
+  <title>Page not found — Ridho Aditya</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/ridho-aditya-logo.svg">
+  <style>
+    :root { color-scheme:light; color:#264d38; background:#e0ead3; font-family:Arial,Helvetica,sans-serif; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; min-height:100svh; display:flex; flex-direction:column; background:linear-gradient(#e0ead326,#e0ead359),url('/assets/images/hero-landscape.webp') center / cover; }
+    header { padding:32px clamp(24px,4.4vw,68px); }
+    .brand { display:inline-flex; align-items:center; gap:12px; color:inherit; text-decoration:none; font-size:12px; font-weight:700; letter-spacing:1.6px; }
+    .brand img { width:34px; height:34px; }
+    main { flex:1; display:grid; place-items:center; padding:24px 20px 56px; }
+    .note { position:relative; width:min(100%,540px); padding:40px clamp(24px,6vw,60px) 44px; text-align:center; background:#fffdf5; border:1px solid #d8c99a; border-radius:8px; box-shadow:0 7px 0 #d4c5a4,0 20px 50px #264d3826; }
+    .note::before { content:''; position:absolute; inset:0; border-radius:inherit; pointer-events:none; opacity:.13; background:url('/assets/images/paper-grain.svg'); }
+    .signpost { position:relative; display:block; width:108px; height:116px; margin:0 auto 12px; }
+    .code { position:relative; margin:0; color:#758757; font:italic clamp(82px,18vw,116px)/1 Georgia,'Times New Roman',serif; letter-spacing:-5px; }
+    h1 { position:relative; margin:16px 0; font:400 clamp(30px,7vw,42px)/1.15 Georgia,'Times New Roman',serif; letter-spacing:-1px; }
+    .period { color:#ed703a; }
+    .copy { position:relative; max-width:340px; margin:0 auto 28px; color:#536c49; font-size:15px; line-height:1.75; }
+    .home { position:relative; display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:48px; padding:14px 24px; border:1px solid #264d38; border-radius:5px; background:#264d38; color:#fffdf5; text-decoration:none; font-size:14px; font-weight:700; box-shadow:0 3px 0 #193a29; }
+    .home:hover { background:#356246; }
+    a:focus-visible { outline:3px solid #ed703a; outline-offset:6px; }
+    .home svg { width:18px; height:18px; flex-shrink:0; }
+    footer { padding:0 24px 24px; text-align:center; font:italic 14px/1.5 Georgia,'Times New Roman',serif; }
+    footer span { display:inline-block; padding:5px 12px; border-radius:4px; background:#fffdf5d9; }
+    @media (max-width:480px) { header { padding-top:24px; } main { padding-top:12px; padding-bottom:36px; } .note { padding-top:28px; padding-bottom:32px; } .signpost { width:84px; height:90px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/" aria-label="Ridho Aditya — home">
+      <img src="/assets/images/ridho-aditya-logo.svg" alt="" width="34" height="34">
+      <span>RIDHO ADITYA</span>
+    </a>
+  </header>
+  <main>
+    <section class="note" aria-labelledby="page-title">
+      <svg class="signpost" viewBox="0 0 108 116" fill="none" aria-hidden="true">
+        <ellipse cx="54" cy="108" rx="39" ry="5" fill="#e0ead3"/>
+        <path d="M50 14h9v94h-9z" fill="#b39870" stroke="#81603d" stroke-width="2"/>
+        <path d="M15 21h65l15 15-15 15H15z" fill="#eec666" stroke="#81603d" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M93 60H28L13 75l15 15h65z" fill="#e0ead3" stroke="#81603d" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M35 36h35m-6-6 6 6-6 6M71 75H38m6-6-6 6 6 6" stroke="#264d38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M25 107q-1-9-8-12m8 12q1-8 7-11m52 11q0-8 6-12" stroke="#758757" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <p class="code">404</p>
+      <h1 id="page-title">A little off the path<span class="period">.</span></h1>
+      <p class="copy">This page may have moved, or never existed. Let's head back to a familiar place.</p>
+      <a class="home" href="/">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m10 6-6 6 6 6m-6-6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to home
+      </a>
+    </section>
+  </main>
+  <footer><span>Still a world to explore.</span></footer>
+</body>
+</html>

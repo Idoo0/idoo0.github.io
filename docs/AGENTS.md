@@ -74,6 +74,8 @@ server.mjs                 Server lokal
 
 ## Upload ke GitHub
 
+Halaman `404.html` di root menjadi halaman error khusus GitHub Pages, dengan tombol **Back to home** menuju `/`. Sertakan file ini saat upload. Gaya dan teksnya berdiri sendiri tanpa JavaScript; path asset diawali `/` agar tetap benar pada URL salah yang bertingkat di situs `idoo0.github.io`. Jika dipindah ke situs subfolder repository, sesuaikan awalan path asset dan link berandanya. Server lokal juga menampilkan halaman ini dengan status HTTP 404 untuk navigasi browser ke alamat yang tidak ditemukan; endpoint API tetap mengembalikan JSON.
+
 Setelah mengedit, unggah / commit JSON baru di `data/` beserta asset yang berubah. Untuk unggahan pertama setelah refactor ini, sertakan juga `index.html`, `sections/`, `assets/`, dan seluruh `data/`.
 
 Portfolio tetap berjalan di hosting statis seperti GitHub Pages; tidak memerlukan server Node di hosting. Semua path mendukung situs pada subfolder repository. Halaman admin hanya dapat menyimpan ketika dibuka dari server lokal di atas. API tidak tersedia di GitHub Pages. Jangan upload `admin/.backups/`.
