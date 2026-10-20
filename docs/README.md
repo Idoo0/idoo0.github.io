@@ -25,6 +25,10 @@ Highlights include a **Bronze Medal at PIMNAS 38** and an **Honorable Mention as
 
 ## Let's Connect
 
+My personal social links page is available at `/linktree/`, with LinkedIn, Instagram, and Facebook. It is a standalone static page and also works without JavaScript.
+
+Run `npm start` and visit `http://127.0.0.1:8765/linktree/` to preview it. For GitHub Pages, publish `linktree/` together with `assets/` and the existing portfolio files. Relative asset paths also support hosting under a repository subfolder. Edit the links in `linktree/index.html` and the appearance in `assets/css/linktree.css`.
+
 I'm open to conversations about AI, software development, and opportunities to build something useful together.
 
 - [Email](mailto:ridhoaditya925@gmail.com)

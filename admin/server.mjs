@@ -106,11 +106,13 @@ export function createPortfolioServer({root,githubPreview=fetchGithubPreview}) {
       if(!['GET','HEAD'].includes(req.method))throw fail(405,'Metode tidak didukung.');
       pageRequest=Boolean(req.headers.accept?.includes('text/html'));
       if(url.pathname==='/admin') {res.writeHead(308,{Location:'/admin/'+url.search});res.end();return;}
+      if(url.pathname==='/linktree') {res.writeHead(308,{Location:'/linktree/'+url.search});res.end();return;}
       let pathname;try{pathname=decodeURIComponent(url.pathname);}catch{throw fail(400,'Path tidak valid.');}
       if(pathname.includes('\\')||pathname.includes('\0')||pathname.split('/').some(segment=>segment.startsWith('.')))throw fail(404,'File tidak ditemukan.');
       if(pathname==='/')pathname='/index.html';
       if(pathname==='/admin'||pathname==='/admin/')pathname='/admin/index.html';
-      const publicPath=pathname==='/index.html'||/^\/(?:sections|assets|data)\//.test(pathname)||/^\/admin\/(?:index\.html|app\.js|access\.js|photo-order\.js|styles\.css|schema\.js|images\.js|image-policy\.js|documents\.js)$/.test(pathname);
+      if(pathname==='/linktree/')pathname='/linktree/index.html';
+      const publicPath=pathname==='/index.html'||pathname==='/linktree/index.html'||/^\/(?:sections|assets|data)\//.test(pathname)||/^\/admin\/(?:index\.html|app\.js|access\.js|photo-order\.js|styles\.css|schema\.js|images\.js|image-policy\.js|documents\.js)$/.test(pathname);
       if(!publicPath&&pathname!=='/404.html')throw fail(404,'File tidak ditemukan.');
       const filename=path.resolve(base,'.'+pathname);
       if(!filename.startsWith(base+path.sep))throw fail(404,'File tidak ditemukan.');
