@@ -10,11 +10,12 @@
   <style>
     :root { color-scheme:light; color:#264d38; background:#e0ead3; font-family:Arial,Helvetica,sans-serif; }
     * { box-sizing:border-box; }
-    body { margin:0; min-height:100vh; min-height:100svh; display:flex; flex-direction:column; background:linear-gradient(#e0ead326,#e0ead359),url('/assets/images/hero-landscape.webp') center / cover; }
-    header { padding:32px clamp(24px,4.4vw,68px); }
+    body { margin:0; min-height:100vh; min-height:100svh; isolation:isolate; }
+    .landscape { position:fixed; inset:0; z-index:-1; width:100%; height:100%; overflow:hidden; pointer-events:none; }
+    header { position:absolute; top:32px; left:clamp(24px,4.4vw,68px); z-index:1; }
     .brand { display:inline-flex; align-items:center; gap:12px; color:inherit; text-decoration:none; font-size:12px; font-weight:700; letter-spacing:1.6px; }
     .brand img { width:34px; height:34px; }
-    main { flex:1; display:grid; place-items:center; padding:24px 20px 56px; }
+    main { min-height:100vh; min-height:100svh; display:grid; place-items:center; padding:96px 20px 32px; }
     .note { position:relative; width:min(100%,540px); padding:40px clamp(24px,6vw,60px) 44px; text-align:center; background:#fffdf5; border:1px solid #d8c99a; border-radius:8px; box-shadow:0 7px 0 #d4c5a4,0 20px 50px #264d3826; }
     .note::before { content:''; position:absolute; inset:0; border-radius:inherit; pointer-events:none; opacity:.13; background:url('/assets/images/paper-grain.svg'); }
     .signpost { position:relative; display:block; width:108px; height:116px; margin:0 auto 12px; }
@@ -26,12 +27,33 @@
     .home:hover { background:#356246; }
     a:focus-visible { outline:3px solid #ed703a; outline-offset:6px; }
     .home svg { width:18px; height:18px; flex-shrink:0; }
-    footer { padding:0 24px 24px; text-align:center; font:italic 14px/1.5 Georgia,'Times New Roman',serif; }
-    footer span { display:inline-block; padding:5px 12px; border-radius:4px; background:#fffdf5d9; }
-    @media (max-width:480px) { header { padding-top:24px; } main { padding-top:12px; padding-bottom:36px; } .note { padding-top:28px; padding-bottom:32px; } .signpost { width:84px; height:90px; } }
+    @media (max-width:480px) { header { top:24px; } main { padding-top:82px; padding-bottom:24px; } .note { padding-top:28px; padding-bottom:32px; } .signpost { width:84px; height:90px; } }
+    @media (max-height:700px) {
+      main { padding:76px 20px 24px; }
+      .note { padding:20px 24px 24px; }
+      .signpost { display:none; }
+      .code { font-size:64px; }
+      h1 { margin:10px 0; font-size:30px; }
+      .copy { margin-bottom:18px; font-size:14px; line-height:1.5; }
+    }
+    @media (max-height:480px) and (min-width:560px) {
+      header { top:20px; }
+      main { padding-top:70px; }
+      .note { display:grid; grid-template-columns:100px minmax(0,1fr); column-gap:24px; width:min(100%,680px); text-align:left; }
+      .code { grid-column:1; grid-row:1 / 4; align-self:center; font-size:88px; }
+      h1, .copy, .home { grid-column:2; }
+      .copy { margin-left:0; }
+      .home { justify-self:start; }
+    }
   </style>
 </head>
 <body>
+  <!-- The viewBox crops the bottom of the source before fitting any screen size. -->
+  <svg class="landscape" viewBox="0 0 2304 1140" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs><linearGradient id="landscape-tint" x2="0" y2="1"><stop stop-color="#e0ead3" stop-opacity=".15"/><stop offset="1" stop-color="#e0ead3" stop-opacity=".35"/></linearGradient></defs>
+    <image href="/assets/images/hero-landscape.webp" width="2304" height="1294"/>
+    <rect width="2304" height="1140" fill="url(#landscape-tint)"/>
+  </svg>
   <header>
     <a class="brand" href="/" aria-label="Ridho Aditya — home">
       <img src="/assets/images/ridho-aditya-logo.svg" alt="" width="34" height="34">
@@ -57,6 +79,5 @@
       </a>
     </section>
   </main>
-  <footer><span>Still a world to explore.</span></footer>
 </body>
 </html>
